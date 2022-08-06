@@ -10,7 +10,20 @@
 
     <color name="primary_dark_blue">#1f2265</color>
     <color name="primary_light_blue">#157cb8</color>
+    <color name="lightest_blue">#62a1c4</color>
+
     <color name="primary_orange">#e48258</color>
     <color name="dark_orange">#e16631</color>
+
+    <color name="primary_green">#a5c868</color>
+    <color name="dark_green">#77a822</color>
+
+    <color name="primary_pink">#da8699</color>
+    <color name="dark_pink">#d35e78</color>
+
+    <color name="primary_yellow">#ffe189</color>
+    <color name="dark_yellow">#fbb900</color>
+
     <color name="dark">#2d2d2d</color>
+    <color name="light">#e2e2e2</color>
 </resources>
