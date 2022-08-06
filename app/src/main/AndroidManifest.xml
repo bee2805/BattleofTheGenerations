@@ -14,8 +14,13 @@
         android:theme="@style/Theme.BattleOfTheGenerations"
         tools:targetApi="31">
         <activity
+            android:name=".CategoryView"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

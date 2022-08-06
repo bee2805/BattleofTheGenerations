@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Battle of The Generations</string>
+
+    <!--  Main Activity  -->
+    <string name="welcome">Welcome to</string>
+    <string name="front_page_heading">Please enter a username:</string>
+    <string name="front_page_button">Start!</string>
+
+    <!--  Category View  -->
+    <string name="greeting_user">Hello, User!</string>
+
+    <string name="category1">Boomer</string>
+    <string name="boomer_year">1946-1964</string>
+
+    <string name="category2">Gen X</string>
+    <string name="category3">Millennial</string>
+    <string name="category4">Gen Z</string>
+    <string name="category5">Which generation does your soul belong to?</string>
 </resources>
