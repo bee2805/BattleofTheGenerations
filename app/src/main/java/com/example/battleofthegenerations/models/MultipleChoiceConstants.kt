@@ -114,6 +114,23 @@ object MultipleChoiceConstants {
             "Saving my heart"
         )
 
+        // add questions to array
+        allLMultipleChoiceQuestions.add(boomerMultipleChoice1)
+        allLMultipleChoiceQuestions.add(boomerMultipleChoice2)
+        allLMultipleChoiceQuestions.add(boomerMultipleChoice3)
+
+        allLMultipleChoiceQuestions.add(genXMultipleChoice1)
+        allLMultipleChoiceQuestions.add(genXMultipleChoice2)
+        allLMultipleChoiceQuestions.add(genXMultipleChoice3)
+
+        allLMultipleChoiceQuestions.add(millennialMultipleChoice1)
+        allLMultipleChoiceQuestions.add(millennialMultipleChoice2)
+        allLMultipleChoiceQuestions.add(millennialMultipleChoice3)
+
+        allLMultipleChoiceQuestions.add(genZMultipleChoice1)
+        allLMultipleChoiceQuestions.add(genZMultipleChoice2)
+        allLMultipleChoiceQuestions.add(genZMultipleChoice3)
+
         return allLMultipleChoiceQuestions
     }
 

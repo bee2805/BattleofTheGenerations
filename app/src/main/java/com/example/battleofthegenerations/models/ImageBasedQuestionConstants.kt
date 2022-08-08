@@ -82,6 +82,15 @@ object ImageBasedQuestionConstants {
             "Twerking"
         )
 
+        allImageBasedQuestions.add(boomerImageBasedQuestion1)
+        allImageBasedQuestions.add(boomerImageBasedQuestion2)
+        allImageBasedQuestions.add(genXImageBasedQuestion1)
+        allImageBasedQuestions.add(genXImageBasedQuestion2)
+        allImageBasedQuestions.add(millennialImageBasedQuestion1)
+        allImageBasedQuestions.add(millennialImageBasedQuestion2)
+        allImageBasedQuestions.add(genZImageBasedQuestion1)
+        allImageBasedQuestions.add(genZImageBasedQuestion2)
+
         return allImageBasedQuestions
     }
 }
