@@ -30,8 +30,8 @@ class MainActivity : AppCompatActivity() {
             }else{
                 //TODO: Navigate to next activity
             }
-
         }
 
     }
+
 }
