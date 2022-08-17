@@ -26,6 +26,10 @@ class MultipleChoiceActivity : AppCompatActivity() {
 
         Log.i("Multiple Choice Count: ", "$multipleChoiceQuestions.size")
 
-        binding.tvMultipleChoiceQuestion.text = multipleChoiceQuestions[0].questionText
+        binding.tvMultipleChoiceQuestion.text = multipleChoiceQuestions[7].questionText
+        binding.ivMcImage.setImageResource(multipleChoiceQuestions[7].questionImg)
+        binding.tvOptionOne.text = multipleChoiceQuestions[7].optionOne
+        binding.tvOptionTwo.text = multipleChoiceQuestions[7].optionTwo
+        binding.tvOptionThree.text = multipleChoiceQuestions[7].optionThree
     }
 }

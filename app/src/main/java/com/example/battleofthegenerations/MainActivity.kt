@@ -1,9 +1,9 @@
 package com.example.battleofthegenerations
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import com.example.battleofthegenerations.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -25,13 +25,14 @@ class MainActivity : AppCompatActivity() {
 
             // checking if it is empty
             if(username.toString() == ""){
-                //var toast = Toast.makeText(this, "Please enter your username", Toast.LENGTH_LONG).show()
                 binding.etUsername.error = "Please add a username."
             }else{
-                //TODO: Navigate to next activity
+                //intent navigation
+                val intent = Intent(this, CategoryView::class.java)
+                intent.putExtra("username", username.toString())
+                startActivity(intent)
             }
         }
-
     }
 
 }

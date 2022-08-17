@@ -24,5 +24,6 @@ class LyricQuestionActivity : AppCompatActivity() {
         Log.i("Lyric Question Count: ", "$lyricQuestions.size")
 
         binding.tvLyricQuestion.text = lyricQuestions[0].questionText
+        binding.ivLyricImage.setImageResource(lyricQuestions[0].questionImage)
     }
 }

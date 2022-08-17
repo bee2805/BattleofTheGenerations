@@ -24,6 +24,10 @@ class ImageBasedActivity : AppCompatActivity() {
 
         Log.i("Lyric Question Count: ", "$imageQuestions.size")
 
-        binding.tvImageQuestion.text = imageQuestions[0].questionText
+        binding.tvImageQuestion.text = imageQuestions[3].questionText
+        binding.ivIbQues.setImageResource(imageQuestions[3].questionImage)
+        binding.tvOptionOne.text = imageQuestions[3].optionOne
+        binding.tvOptionTwo.text = imageQuestions[3].optionTwo
+        binding.tvOptionThree.text = imageQuestions[3].optionThree
     }
 }
