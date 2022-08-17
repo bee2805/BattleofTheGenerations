@@ -18,33 +18,25 @@ object LyricQuestionConstants {
         val boomerMissingLyric1 = MissingLyricQuestion(
             1,
             "You're so _________, you probably think this song is about you.",
-            "vain",
-            "self-centered",
-            "cool"
+            "vain"
         )
 
         val boomerMissingLyric2 = MissingLyricQuestion(
             2,
             "See that girl, watch that scene, __________ the dancing queen!",
-            "We are",
-            "Digging",
-            "Dig in"
+            "Digging"
         )
 
         // Gen X
         val genXMissingLyric1 = MissingLyricQuestion(
             3,
             "We don't need another _______, we don't need another way home.",
-            "hero",
-            "house",
-            "churro"
+            "hero"
         )
 
         val genXMissingLyric2 = MissingLyricQuestion(
             4,
             "It's just another __________ Monday.",
-            "Sunday",
-            "Funday",
             "Monday"
         )
 
@@ -52,34 +44,26 @@ object LyricQuestionConstants {
         val millennialMissingLyric1 = MissingLyricQuestion(
             5,
             "Jealousy, turning ______ into the sea.",
-            "saints",
-            "paint",
-            "grain"
+            "saints"
         )
 
         val millennialMissingLyric2 = MissingLyricQuestion(
             6,
             "Hey soul sister, ain't that Mr. ______ on the radio, stereo, the way you move ain't fair you know.",
-            "Twister",
-            "Mister",
-            "Blister"
+            "Mister"
         )
 
         // Gen Z
         val genZMissingLyric1 = MissingLyricQuestion(
             7,
             "I'm gonna take my _____ to the hotel room.",
-            "cash",
-            "hoe",
             "horse"
         )
 
         val genZMissingLyric2 = MissingLyricQuestion(
             8,
             "Old, but I'm not that old, young, but I'm not that _______.",
-            "cold",
-            "bold",
-            "mold"
+            "bold"
         )
 
         // add questions to array
