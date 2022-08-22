@@ -6,107 +6,64 @@ object ImageBasedQuestionConstants {
 
     // this function returns all questions
     // this is where we will se all of our set questions
-    fun getAllImageBasedQuestions() : ArrayList<ImageBasedQuestion>{
 
-        // 1. Create empty array list
-        val allImageBasedQuestions = ArrayList<ImageBasedQuestion>()
+    fun getBoomerLyricQuestions():ArrayList<MissingLyricQuestion>{
 
-        // 2. create the data
-        // 2 per generation for this one.
+        val boomerLyricQuestions = ArrayList<MissingLyricQuestion>()
 
         // Boomer
-        // https://www.flickr.com/photos/nhsalumni/3244836799/sizes/m/in/photostream/
-        val boomerImageBasedQuestion1 = ImageBasedQuestion(
+        // https://www.youtube.com/watch?v=j13oJajXx0M - music vid screenshot
+        val boomerMissingLyric1 = MissingLyricQuestion(
             1,
-            R.drawable.howdy_dowdy,
-            "Can you remember the name of this puppet show?",
-            "Archie Andrews",
-            "Howdy Dowdy",
-            "Chuckles"
+            R.drawable.youre_so_vain,
+            "You're so _________, you probably think this song is about you.",
+            "vain"
         )
 
-        // https://www.insider.com/jeans-over-the-years-2018-8
-        val boomerImageBasedQuestion2 = ImageBasedQuestion(
+        // https://www.youtube.com/watch?v=QRoWiTcO7dk - screenshot from Mama Mia vid
+        val boomerMissingLyric2 = MissingLyricQuestion(
             2,
-            R.drawable.bell_bottoms,
-            "What style pants are these?",
-            "Flare",
-            "Bell Bottoms",
-            "Boot-cut"
+            R.drawable.dancing_queen,
+            "See that girl, watch that scene, __________ the dancing queen!",
+            "Digging"
+        )
+        boomerLyricQuestions.add(boomerMissingLyric1)
+        boomerLyricQuestions.add(boomerMissingLyric2)
+        return boomerLyricQuestions
+    }
+
+    fun getBoomerMultipleChoiceQuestions():ArrayList<MultipleChoice>{
+
+        val boomerMultipleChoiceQuestions = ArrayList<MultipleChoice>()
+
+        val boomerMultipleChoice1 = MultipleChoice(
+            1,
+            R.drawable.woodstock,
+            "What was the most iconic festival of the 1960's?",
+            "Rocking the Daisies",
+            "Woodstock",
+            "Coachella"
         )
 
-        // Gen X
-        // https://www.buzzfeed.com/briangalindo/only-gen-xers-are-passing-this-quiz
-        val genXImageBasedQuestion1 = ImageBasedQuestion(
+        // https://www.buzzfeed.com/sarahaspler/boomer-trivia-quiz
+        val boomerMultipleChoice2 = MultipleChoice(
+            2,
+            R.drawable.sputnik,
+            "What was the name of the first satellite launched into space",
+            "Telstar",
+            "Sputnik",
+            "RadarSat"
+        )
+
+        // https://www.buzzfeed.com/sarahaspler/boomer-trivia-quiz
+        val boomerMultipleChoice3 = MultipleChoice(
             3,
-            R.drawable.atari_2600,
-            "What gaming console is this?",
-            "Tomagotchi",
-            "Game Boy",
-            "Atari 2600"
+            R.drawable.beetlemania,
+            "What was the term used to describe the rise of the Beetles?",
+            "Beetlefever",
+            "Beetlemania",
+            "Beetlecraze"
         )
-
-        // https://www.youtube.com/watch?v=djV11Xbc914 - screenshot from music video
-        val genXImageBasedQuestion2 = ImageBasedQuestion(
-            4,
-            R.drawable.take_on_me_aha,
-            "This is a scene from which music video?",
-            "'Hold me now' by the Thomson Twins",
-            "'Take on me' by A-Ha",
-            "'I'm still standing' by Elton John"
-        )
-
-        // Millennial
-        // https://www.buzzfeed.com/briangalindo/easy-2000s-trivia-quiz-for-millennials
-        val millennialImageBasedQuestion1 = ImageBasedQuestion(
-            5,
-            R.drawable.sidekick,
-            "What Phone is this?",
-            "Sidekick",
-            "LG GT360",
-            "Razr"
-        )
-
-        // https://www.youtube.com/watch?v=3G1pwUe4MvA - screenshot from ad
-        val millennialImageBasedQuestion2 = ImageBasedQuestion(
-            6,
-            R.drawable.poo_chi,
-            "What is this toy called?",
-            "Poo-Chi",
-            "Robo Doggo",
-            "Barkie Bot"
-        )
-
-        // Gen Z
-        // https://mobile.twitter.com/daviddobrik - his profile pic on twitter
-        val genZImageBasedQuestion1 = ImageBasedQuestion(
-            7,
-            R.drawable.david_dobrik,
-            "Who is this?",
-            "David Dobrik",
-            "Harry Styles",
-            "Shawn Mendes"
-        )
-
-        // https://en.wikipedia.org/wiki/Dab_%28dance%29
-        val genZImageBasedQuestion2 = ImageBasedQuestion(
-            8,
-            R.drawable.dab,
-            "What dance move is this?",
-            "Dabbing",
-            "flossing",
-            "Twerking"
-        )
-
-        allImageBasedQuestions.add(boomerImageBasedQuestion1)
-        allImageBasedQuestions.add(boomerImageBasedQuestion2)
-        allImageBasedQuestions.add(genXImageBasedQuestion1)
-        allImageBasedQuestions.add(genXImageBasedQuestion2)
-        allImageBasedQuestions.add(millennialImageBasedQuestion1)
-        allImageBasedQuestions.add(millennialImageBasedQuestion2)
-        allImageBasedQuestions.add(genZImageBasedQuestion1)
-        allImageBasedQuestions.add(genZImageBasedQuestion2)
-
-        return allImageBasedQuestions
+        return boomerMultipleChoiceQuestions
     }
 }

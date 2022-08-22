@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.battleofthegenerations.databinding.ActivityCategoryViewBinding
-import com.example.battleofthegenerations.models.ImageBasedQuestionConstants.getAllImageBasedQuestions
+//import com.example.battleofthegenerations.models.ImageBasedQuestionConstants.getAllImageBasedQuestions
 import com.example.battleofthegenerations.models.LyricQuestionConstants.getAllLyricQuestions
 import com.example.battleofthegenerations.views.ImageBasedActivity
 import com.example.battleofthegenerations.views.LyricQuestionActivity
@@ -23,10 +23,15 @@ class CategoryView : AppCompatActivity() {
 
         binding.tvUsername.text = "Hello, $username!"
 
+        binding.ivSettings.setOnClickListener{
+            val intent = Intent(this, SettingsActivity::class.java)
+            startActivity(intent)
+        }
+
         // Navigating to boomer Questions
         binding.catBoomer.setOnClickListener {
             val intent = Intent(this, LyricQuestionActivity::class.java)
-
+            intent.putExtra("category", "boomer")
             startActivity(intent)
         }
 

@@ -14,6 +14,9 @@
         android:theme="@style/Theme.BattleOfTheGenerations"
         tools:targetApi="31">
         <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
@@ -27,11 +30,10 @@
             android:exported="true" />
         <activity
             android:name=".views.ImageBasedActivity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".views.LyricQuestionActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".CategoryView"
             android:exported="true"

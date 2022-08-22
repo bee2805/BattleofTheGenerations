@@ -10,16 +10,28 @@
     android:background="@color/primary_dark_blue"
     android:gravity="center">
 
+    <!--  https://www.flaticon.com/free-icon/gear_484562?term=settings&page=1&position=34&page=1&position=34&related_id=484562&origin=search  -->
+
+    <ImageView
+        android:id="@+id/iv_settings"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/gear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tv_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:text="@string/greeting_user"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,6 +39,7 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="@string/category_info"
         android:textAlignment="center"
         android:textColor="@color/white"

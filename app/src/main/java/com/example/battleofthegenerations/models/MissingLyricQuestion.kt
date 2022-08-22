@@ -6,5 +6,4 @@ data class MissingLyricQuestion (
     val questionImage: Int,
     val questionText: String,
     val answer: String
-//    val answer: Int
 )
