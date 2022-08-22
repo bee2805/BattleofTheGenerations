@@ -57,10 +57,9 @@
         app:boxCornerRadiusTopStart="10dp"
         app:boxStrokeColor="@color/dark_pink"
         app:boxStrokeWidth="3dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_lyric_question">
+        app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_answe"
@@ -71,12 +70,17 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_next"
+        android:padding="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary_green"
+        android:textColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="@color/dark_green"
+        app:strokeWidth="3dp"
         android:text="next"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        tools:layout_editor_absoluteX="30dp" />
+        tools:layout_editor_absoluteX="30dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

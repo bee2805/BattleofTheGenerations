@@ -2,7 +2,7 @@ package com.example.battleofthegenerations.models
 
 import com.example.battleofthegenerations.R
 
-object ImageBasedQuestionConstants {
+object BoomerConstants {
 
     // this function returns all questions
     // this is where we will se all of our set questions
@@ -42,7 +42,8 @@ object ImageBasedQuestionConstants {
             "What was the most iconic festival of the 1960's?",
             "Rocking the Daisies",
             "Woodstock",
-            "Coachella"
+            "Coachella",
+            "Woodstock"
         )
 
         // https://www.buzzfeed.com/sarahaspler/boomer-trivia-quiz
@@ -52,7 +53,8 @@ object ImageBasedQuestionConstants {
             "What was the name of the first satellite launched into space",
             "Telstar",
             "Sputnik",
-            "RadarSat"
+            "RadarSat",
+            "Sputnik"
         )
 
         // https://www.buzzfeed.com/sarahaspler/boomer-trivia-quiz
@@ -62,8 +64,43 @@ object ImageBasedQuestionConstants {
             "What was the term used to describe the rise of the Beetles?",
             "Beetlefever",
             "Beetlemania",
-            "Beetlecraze"
+            "Beetlecraze",
+            "Beetlemania"
         )
+
+        boomerMultipleChoiceQuestions.add(boomerMultipleChoice1)
+        boomerMultipleChoiceQuestions.add(boomerMultipleChoice2)
+        boomerMultipleChoiceQuestions.add(boomerMultipleChoice3)
         return boomerMultipleChoiceQuestions
+    }
+
+    fun getBoomerImageBasedQuestions():ArrayList<ImageBasedQuestion>{
+
+        val boomerImageBasedQuestions = ArrayList<ImageBasedQuestion>()
+
+        val boomerImageBasedQuestion1 = ImageBasedQuestion(
+            1,
+            R.drawable.howdy_dowdy,
+            "Can you remember the name of this puppet show?",
+            "Archie Andrews",
+            "Howdy Dowdy",
+            "Chuckles",
+            "Howdy Dowdy"
+        )
+
+        // https://www.insider.com/jeans-over-the-years-2018-8
+        val boomerImageBasedQuestion2 = ImageBasedQuestion(
+            2,
+            R.drawable.bell_bottoms,
+            "What style pants are these?",
+            "Flare",
+            "Bell Bottoms",
+            "Boot-cut",
+            "Bell Bottoms"
+        )
+
+        boomerImageBasedQuestions.add(boomerImageBasedQuestion1)
+        boomerImageBasedQuestions.add(boomerImageBasedQuestion2)
+        return boomerImageBasedQuestions
     }
 }

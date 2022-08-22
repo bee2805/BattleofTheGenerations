@@ -7,6 +7,6 @@ package com.example.battleofthegenerations.models
         val questionText: String,
         val optionOne: String,
         val optionTwo: String,
-        val optionThree: String
-        //val answer: Int
+        val optionThree: String,
+        val answer: String
 )

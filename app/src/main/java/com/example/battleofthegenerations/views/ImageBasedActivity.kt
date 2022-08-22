@@ -1,12 +1,12 @@
 package com.example.battleofthegenerations.views
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import com.example.battleofthegenerations.R
+import com.example.battleofthegenerations.CategoryView
 import com.example.battleofthegenerations.databinding.ActivityImageBasedBinding
-import com.example.battleofthegenerations.databinding.ActivityLyricQuestionBinding
-import com.example.battleofthegenerations.models.ImageBasedQuestionConstants
+import com.example.battleofthegenerations.models.BoomerConstants.getBoomerImageBasedQuestions
+import com.example.battleofthegenerations.models.ImageBasedQuestion
 
 class ImageBasedActivity : AppCompatActivity() {
 
@@ -18,16 +18,102 @@ class ImageBasedActivity : AppCompatActivity() {
         // inflates activities binding into our content
         binding = ActivityImageBasedBinding.inflate(layoutInflater)
         setContentView(binding.root)
-//
-//        // Call for all my questions
-//        val imageQuestions = ImageBasedQuestionConstants.getAllImageBasedQuestions()
-//
-//        Log.i("Lyric Question Count: ", "$imageQuestions.size")
-//
-//        binding.tvImageQuestion.text = imageQuestions[3].questionText
-//        binding.ivIbQues.setImageResource(imageQuestions[3].questionImage)
-//        binding.tvOptionOne.text = imageQuestions[3].optionOne
-//        binding.tvOptionTwo.text = imageQuestions[3].optionTwo
-//        binding.tvOptionThree.text = imageQuestions[3].optionThree
+
+        val currentCategory = intent.getStringExtra("category").toString()
+        var questionNumber : Int = intent.getIntExtra("imageBasedQuestions", 0)
+
+        when(currentCategory){
+            "boomer"->{
+                val questions = getBoomerImageBasedQuestions()
+                val currentQuestion = questions[questionNumber]
+                updateUI(currentQuestion)
+
+                binding.tvOptionOne.setOnClickListener{
+                    if(binding.tvOptionOne.text == currentQuestion.answer){
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+
+                    if (questionNumber + 1 == questions.count()){
+                        // TODO: navigate to the results screen
+                        val intent = Intent(this, CategoryView::class.java)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+
+                binding.tvOptionTwo.setOnClickListener {
+                    if(binding.tvOptionTwo.text == currentQuestion.answer){
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+
+                    if (questionNumber + 1 == questions.count()){
+                        // TODO: navigate to the results screen
+                        val intent = Intent(this, CategoryView::class.java)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+
+                binding.tvOptionThree.setOnClickListener {
+                    if (binding.tvOptionThree.text == currentQuestion.answer){
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+
+                    if (questionNumber + 1 == questions.count()){
+                        // TODO: navigate to the results screen
+                        val intent = Intent(this, CategoryView::class.java)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+            }
+        }
+    }
+
+    fun updateUI(currentQuestion: ImageBasedQuestion){
+        binding.ivIbQues.setImageResource(currentQuestion.questionImage)
+        binding.tvImageQuestion.text = currentQuestion.questionText
+        binding.tvOptionOne.text = currentQuestion.optionOne
+        binding.tvOptionTwo.text = currentQuestion.optionTwo
+        binding.tvOptionThree.text = currentQuestion.optionThree
     }
 }

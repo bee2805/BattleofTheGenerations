@@ -4,11 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.example.battleofthegenerations.R
 import com.example.battleofthegenerations.databinding.ActivityLyricQuestionBinding
-import com.example.battleofthegenerations.models.ImageBasedQuestionConstants.getBoomerLyricQuestions
-import com.example.battleofthegenerations.models.LyricQuestionConstants
-import com.example.battleofthegenerations.models.LyricQuestionConstants.getAllLyricQuestions
+import com.example.battleofthegenerations.models.BoomerConstants.getBoomerLyricQuestions
 import com.example.battleofthegenerations.models.MissingLyricQuestion
 
 class LyricQuestionActivity : AppCompatActivity() {
@@ -38,6 +35,25 @@ class LyricQuestionActivity : AppCompatActivity() {
 
                     val answer = binding.etAnswe.text
                     if("$answer" == currentQuestionNumber.answer){
+                        val intent = Intent(this, LyricQuestionActivity::class.java)
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("questionNumber", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+
+                        if(questionNumber + 1 == lyricQuestions.count()){
+                            val intent = Intent(this, MultipleChoiceActivity::class.java)
+                            intent.putExtra("category", currentCategory)
+                            startActivity(intent)
+                        } else {
+                            val intent = Intent(this, LyricQuestionActivity::class.java)
+                            intent.putExtra("category", currentCategory)
+                            intent.putExtra("questionNumber", questionNumber + 1)
+                            startActivity(intent)
+                            finish()
+                        }
+
+                    } else {
                         val intent = Intent(this, LyricQuestionActivity::class.java)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("questionNumber", questionNumber + 1)

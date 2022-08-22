@@ -1,14 +1,12 @@
 package com.example.battleofthegenerations.views
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.example.battleofthegenerations.R
-import com.example.battleofthegenerations.databinding.ActivityImageBasedBinding
-import com.example.battleofthegenerations.databinding.ActivityLyricQuestionBinding
 import com.example.battleofthegenerations.databinding.ActivityMultipleChoiceBinding
-import com.example.battleofthegenerations.models.LyricQuestionConstants
-import com.example.battleofthegenerations.models.MultipleChoiceConstants
+import com.example.battleofthegenerations.models.*
+import com.example.battleofthegenerations.models.BoomerConstants.getBoomerMultipleChoiceQuestions
 
 class MultipleChoiceActivity : AppCompatActivity() {
 
@@ -21,15 +19,98 @@ class MultipleChoiceActivity : AppCompatActivity() {
         binding = ActivityMultipleChoiceBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Call for all my questions
-        var multipleChoiceQuestions = MultipleChoiceConstants.getAllMultipleChoiceQuestions()
+        val currentCategory = intent.getStringExtra("category").toString()
+        var questionNumber : Int = intent.getIntExtra("multipleChoiceQuestions", 0)
 
-        Log.i("Multiple Choice Count: ", "$multipleChoiceQuestions.size")
+        when(currentCategory){
+            "boomer"->{
+                val questions = getBoomerMultipleChoiceQuestions()
+                val currentQuestion = questions[questionNumber]
+                updateUI(currentQuestion)
 
-        binding.tvMultipleChoiceQuestion.text = multipleChoiceQuestions[7].questionText
-        binding.ivMcImage.setImageResource(multipleChoiceQuestions[7].questionImg)
-        binding.tvOptionOne.text = multipleChoiceQuestions[7].optionOne
-        binding.tvOptionTwo.text = multipleChoiceQuestions[7].optionTwo
-        binding.tvOptionThree.text = multipleChoiceQuestions[7].optionThree
+                binding.tvOptionOne.setOnClickListener{
+                    if (binding.tvOptionOne.text == currentQuestion.answer){
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+
+                    if(questionNumber + 1 == questions.count()){
+                        val intent = Intent(this, ImageBasedActivity::class.java)
+                        intent.putExtra("category", currentCategory)
+                        startActivity(intent)
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+
+                binding.tvOptionTwo.setOnClickListener {
+                    if(binding.tvOptionTwo.text == currentQuestion.answer){
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+
+                    if(questionNumber + 1 == questions.count()){
+                        val intent = Intent(this, ImageBasedActivity::class.java)
+                        intent.putExtra("category", currentCategory)
+                        startActivity(intent)
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+
+                binding.tvOptionThree.setOnClickListener {
+                    if (binding.tvOptionThree.text == currentQuestion.answer) {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        startActivity(intent)
+                    }
+
+                    if(questionNumber + 1 == questions.count()){
+                        val intent = Intent(this, ImageBasedActivity::class.java)
+                        intent.putExtra("category", currentCategory)
+                        startActivity(intent)
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+
+            }
+        }
+    }
+
+    fun updateUI (currentQuestion: MultipleChoice){
+        binding.tvMultipleChoiceQuestion.text = currentQuestion.questionText
+        binding.ivMcImage.setImageResource(currentQuestion.questionImg)
+        binding.tvOptionOne.text = currentQuestion.optionOne
+        binding.tvOptionTwo.text = currentQuestion.optionTwo
+        binding.tvOptionThree.text = currentQuestion.optionThree
     }
 }
