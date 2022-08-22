@@ -26,6 +26,7 @@ class CategoryView : AppCompatActivity() {
         // Navigating to boomer Questions
         binding.catBoomer.setOnClickListener {
             val intent = Intent(this, LyricQuestionActivity::class.java)
+
             startActivity(intent)
         }
 

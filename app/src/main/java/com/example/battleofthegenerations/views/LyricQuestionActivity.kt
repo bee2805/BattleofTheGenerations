@@ -27,3 +27,5 @@ class LyricQuestionActivity : AppCompatActivity() {
         binding.ivLyricImage.setImageResource(lyricQuestions[0].questionImage)
     }
 }
+
+//
