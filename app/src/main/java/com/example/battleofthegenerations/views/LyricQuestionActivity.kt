@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import com.example.battleofthegenerations.databinding.ActivityLyricQuestionBinding
 import com.example.battleofthegenerations.models.BoomerConstants.getBoomerLyricQuestions
+import com.example.battleofthegenerations.models.GenXConstants.getGenXLyricQuestions
 import com.example.battleofthegenerations.models.MissingLyricQuestion
 
 class LyricQuestionActivity : AppCompatActivity() {
@@ -26,15 +27,13 @@ class LyricQuestionActivity : AppCompatActivity() {
         when(currentCategory){
             "boomer"->{
                 val lyricQuestions = getBoomerLyricQuestions()
-                val currentQuestionNumber = lyricQuestions[questionNumber]
-                updateUI(currentQuestionNumber)
-
-                Log.i("Question", lyricQuestions[0].questionText)
+                val currentQuestion = lyricQuestions[questionNumber]
+                updateUI(currentQuestion)
 
                 binding.btnNext.setOnClickListener{
 
-                    val answer = binding.etAnswe.text
-                    if("$answer" == currentQuestionNumber.answer){
+                    val answer = binding.etAnswer.text
+                    if("$answer" == currentQuestion.answer){
                         val intent = Intent(this, LyricQuestionActivity::class.java)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("questionNumber", questionNumber + 1)
@@ -42,6 +41,42 @@ class LyricQuestionActivity : AppCompatActivity() {
                         finish()
 
                         if(questionNumber + 1 == lyricQuestions.count()){
+                            val intent = Intent(this, MultipleChoiceActivity::class.java)
+                            intent.putExtra("category", currentCategory)
+                            startActivity(intent)
+                        } else {
+                            val intent = Intent(this, LyricQuestionActivity::class.java)
+                            intent.putExtra("category", currentCategory)
+                            intent.putExtra("questionNumber", questionNumber + 1)
+                            startActivity(intent)
+                            finish()
+                        }
+
+                    } else {
+                        val intent = Intent(this, LyricQuestionActivity::class.java)
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("questionNumber", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+            }
+            "gen_x"->{
+                val lyricQuestions = getGenXLyricQuestions()
+                val currentQuestion = lyricQuestions[questionNumber]
+                updateUI(currentQuestion)
+
+                binding.btnNext.setOnClickListener {
+                    val answer = binding.etAnswer.text
+                    if ("$answer" == currentQuestion.answer){
+
+                        val intent = Intent(this, LyricQuestionActivity::class.java)
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("questionNumber", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+
+                        if (questionNumber + 1 == lyricQuestions.count()){
                             val intent = Intent(this, MultipleChoiceActivity::class.java)
                             intent.putExtra("category", currentCategory)
                             startActivity(intent)

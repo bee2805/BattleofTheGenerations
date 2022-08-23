@@ -6,7 +6,7 @@ object GenXConstants {
 
     // this function returns all questions
     // this is where we will se all of our set questions
-    fun getAllGenXLyricQuestions():ArrayList<MissingLyricQuestion>{
+    fun getGenXLyricQuestions():ArrayList<MissingLyricQuestion>{
 
         val genXLyricQuestions = ArrayList<MissingLyricQuestion>()
 
@@ -33,7 +33,7 @@ object GenXConstants {
 
     } // end of gen X lyric questions
 
-    fun getAllGenXMultipleChoice():ArrayList<MultipleChoice>{
+    fun getGenXMultipleChoice():ArrayList<MultipleChoice>{
 
         val genXMultipleChoiceQuestions = ArrayList<MultipleChoice>()
 
@@ -68,16 +68,16 @@ object GenXConstants {
             "Cheers",
             "Married with children",
             "Family Ties",
-            "Married with children"
+            "Family Ties"
         )
 
         genXMultipleChoiceQuestions.add(genXMultipleChoice1)
         genXMultipleChoiceQuestions.add(genXMultipleChoice2)
-        genXMultipleChoiceQuestions.add(genXMultipleChoice2)
+        genXMultipleChoiceQuestions.add(genXMultipleChoice3)
         return genXMultipleChoiceQuestions
     } // end of Gen X multiple choice questions
 
-    fun getAllGenXImageBasedQuestions():ArrayList<ImageBasedQuestion>{
+    fun getGenXImageBasedQuestions():ArrayList<ImageBasedQuestion>{
 
         val genXImageBasedQuestions = ArrayList<ImageBasedQuestion>()
 
@@ -104,7 +104,7 @@ object GenXConstants {
         )
 
         genXImageBasedQuestions.add(genXImageBasedQuestion1)
-        genXImageBasedQuestions.add(genXImageBasedQuestion1)
+        genXImageBasedQuestions.add(genXImageBasedQuestion2)
         return genXImageBasedQuestions
     }
 

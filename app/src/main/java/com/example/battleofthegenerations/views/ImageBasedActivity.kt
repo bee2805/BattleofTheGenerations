@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.example.battleofthegenerations.CategoryView
 import com.example.battleofthegenerations.databinding.ActivityImageBasedBinding
 import com.example.battleofthegenerations.models.BoomerConstants.getBoomerImageBasedQuestions
+import com.example.battleofthegenerations.models.GenXConstants.getGenXImageBasedQuestions
 import com.example.battleofthegenerations.models.ImageBasedQuestion
 
 class ImageBasedActivity : AppCompatActivity() {
@@ -96,6 +97,91 @@ class ImageBasedActivity : AppCompatActivity() {
                     if (questionNumber + 1 == questions.count()){
                         // TODO: navigate to the results screen
                         val intent = Intent(this, CategoryView::class.java)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+            }
+            // gen x
+            "gen_x"->{
+                val genXQuestions = getGenXImageBasedQuestions()
+                val currentQuestion = genXQuestions[questionNumber]
+                updateUI(currentQuestion)
+
+                binding.tvOptionOne.setOnClickListener {
+
+                    if (binding.tvOptionOne.text == currentQuestion.answer){
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+
+                    if (questionNumber + 1 == genXQuestions.count()){
+                        val intent = Intent(this, LyricQuestionActivity::class.java)
+                        intent.putExtra("category", currentCategory)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+
+                binding.tvOptionTwo.setOnClickListener {
+                    if (binding.tvOptionTwo.text == currentQuestion.answer){
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+
+                    if (questionNumber + 1 == genXQuestions.count()){
+                        val intent = Intent(this, LyricQuestionActivity::class.java)
+                        intent.putExtra("category", currentCategory)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+
+                binding.tvOptionThree.setOnClickListener {
+                    if (binding.tvOptionThree.text == currentQuestion.answer){
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+
+                    if (questionNumber + 1 == genXQuestions.count()){
+                        val intent = Intent(this, LyricQuestionActivity::class.java)
+                        intent.putExtra("category", currentCategory)
                         startActivity(intent)
                         finish()
                     } else {

@@ -4,9 +4,12 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.battleofthegenerations.CategoryView
 import com.example.battleofthegenerations.databinding.ActivityMultipleChoiceBinding
 import com.example.battleofthegenerations.models.*
 import com.example.battleofthegenerations.models.BoomerConstants.getBoomerMultipleChoiceQuestions
+import com.example.battleofthegenerations.models.GenXConstants.getGenXMultipleChoice
+import java.util.*
 
 class MultipleChoiceActivity : AppCompatActivity() {
 
@@ -102,6 +105,84 @@ class MultipleChoiceActivity : AppCompatActivity() {
                     }
                 }
 
+            }
+            "gen_x"->{
+                val genXQuestions = getGenXMultipleChoice()
+                val currentQuestion = genXQuestions[questionNumber]
+                updateUI(currentQuestion)
+
+                binding.tvOptionOne.setOnClickListener {
+                    if (binding.tvOptionOne.text == currentQuestion.answer){
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+
+                    if(questionNumber + 1 == genXQuestions.count()){
+                        //TODO: Navigate to the results screen
+                        val intent = Intent(this, CategoryView::class.java)
+                        startActivity(intent)
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+
+                binding.tvOptionTwo.setOnClickListener {
+                    if(binding.tvOptionTwo.text == currentQuestion.answer){
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                    if(questionNumber + 1 == genXQuestions.count()){
+                        //TODO: Navigate to the results screen
+                        val intent = Intent(this, CategoryView::class.java)
+                        startActivity(intent)
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+
+                binding.tvOptionThree.setOnClickListener {
+                    if (binding.tvOptionThree.text == currentQuestion.answer){
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                    if(questionNumber + 1 == genXQuestions.count()){
+                        //TODO: Navigate to the results screen
+                        val intent = Intent(this, CategoryView::class.java)
+                        startActivity(intent)
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
             }
         }
     }

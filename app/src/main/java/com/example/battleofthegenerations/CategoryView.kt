@@ -37,16 +37,19 @@ class CategoryView : AppCompatActivity() {
         // Navigate to genX questions
         binding.catGenX.setOnClickListener{
             val intent = Intent(this, ImageBasedActivity::class.java)
+            intent.putExtra("category", "gen_x")
             startActivity(intent)
         }
 
         binding.catMillennial.setOnClickListener {
             val intent = Intent(this, MultipleChoiceActivity::class.java)
+            intent.putExtra("category", "millennial")
             startActivity(intent)
         }
 
         binding.catGenZ.setOnClickListener {
             val intent = Intent(this, ImageBasedActivity::class.java)
+            intent.putExtra("category", "gen_z")
             startActivity(intent)
         }
     }
