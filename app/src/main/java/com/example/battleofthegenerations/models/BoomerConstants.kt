@@ -36,12 +36,13 @@ object BoomerConstants {
 
         val boomerMultipleChoiceQuestions = ArrayList<MultipleChoice>()
 
+        // https://www.buzzfeed.com/sarahaspler/boomer-trivia-quiz
         val boomerMultipleChoice1 = MultipleChoice(
             1,
             R.drawable.woodstock,
             "What was the most iconic festival of the 1960's?",
-            "Rocking the Daisies",
             "Woodstock",
+            "Rocking the Daisies",
             "Coachella",
             "Woodstock"
         )
@@ -63,8 +64,8 @@ object BoomerConstants {
             R.drawable.beetlemania,
             "What was the term used to describe the rise of the Beetles?",
             "Beetlefever",
-            "Beetlemania",
             "Beetlecraze",
+            "Beetlemania",
             "Beetlemania"
         )
 
@@ -83,8 +84,8 @@ object BoomerConstants {
             R.drawable.howdy_dowdy,
             "Can you remember the name of this puppet show?",
             "Archie Andrews",
-            "Howdy Dowdy",
             "Chuckles",
+            "Howdy Dowdy",
             "Howdy Dowdy"
         )
 

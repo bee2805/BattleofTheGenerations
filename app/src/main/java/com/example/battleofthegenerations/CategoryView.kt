@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.battleofthegenerations.databinding.ActivityCategoryViewBinding
 //import com.example.battleofthegenerations.models.ImageBasedQuestionConstants.getAllImageBasedQuestions
-import com.example.battleofthegenerations.models.LyricQuestionConstants.getAllLyricQuestions
 import com.example.battleofthegenerations.views.ImageBasedActivity
 import com.example.battleofthegenerations.views.LyricQuestionActivity
 import com.example.battleofthegenerations.views.MultipleChoiceActivity
