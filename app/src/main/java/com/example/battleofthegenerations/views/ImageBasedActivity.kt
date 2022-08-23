@@ -7,7 +7,9 @@ import com.example.battleofthegenerations.CategoryView
 import com.example.battleofthegenerations.databinding.ActivityImageBasedBinding
 import com.example.battleofthegenerations.models.BoomerConstants.getBoomerImageBasedQuestions
 import com.example.battleofthegenerations.models.GenXConstants.getGenXImageBasedQuestions
+import com.example.battleofthegenerations.models.GenZConstants.getGenZImageBasedQuestions
 import com.example.battleofthegenerations.models.ImageBasedQuestion
+import com.example.battleofthegenerations.models.MillennialConstants.getMillennialImageBasedQuestions
 
 class ImageBasedActivity : AppCompatActivity() {
 
@@ -181,6 +183,173 @@ class ImageBasedActivity : AppCompatActivity() {
 
                     if (questionNumber + 1 == genXQuestions.count()){
                         val intent = Intent(this, LyricQuestionActivity::class.java)
+                        intent.putExtra("category", currentCategory)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+            }
+
+            "millennial"->{
+                val millennialQuestion = getMillennialImageBasedQuestions()
+                val currentQuestion = millennialQuestion[questionNumber]
+                updateUI(currentQuestion)
+
+                binding.tvOptionOne.setOnClickListener {
+                    if (binding.tvOptionOne.text == currentQuestion.answer){
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+
+                    if (questionNumber + 1 == millennialQuestion.count()){
+                        val intent = Intent(this, LyricQuestionActivity::class.java)
+                        intent.putExtra("category", currentCategory)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+
+                binding.tvOptionTwo.setOnClickListener {
+                    if (binding.tvOptionTwo.text == currentQuestion.answer){
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+
+                    if (questionNumber + 1 == millennialQuestion.count()){
+                        val intent = Intent(this, LyricQuestionActivity::class.java)
+                        intent.putExtra("category", currentCategory)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+
+                binding.tvOptionThree.setOnClickListener {
+                    if (binding.tvOptionThree.text == currentQuestion.answer){
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+
+                    if (questionNumber + 1 == millennialQuestion.count()){
+                        val intent = Intent(this, LyricQuestionActivity::class.java)
+                        intent.putExtra("category", currentCategory)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+            }
+            "gen_z"->{
+                val genZQuestions = getGenZImageBasedQuestions()
+                val currentQuestion = genZQuestions[questionNumber]
+                updateUI(currentQuestion)
+
+                binding.tvOptionOne.setOnClickListener {
+                    if (binding.tvOptionOne.text == currentQuestion.answer){
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+
+                    if (questionNumber + 1 == genZQuestions.count()){
+                        val intent = Intent(this, MultipleChoiceActivity::class.java)
+                        intent.putExtra("category", currentCategory)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+
+                binding.tvOptionTwo.setOnClickListener {
+                    if (binding.tvOptionTwo.text == currentQuestion.answer){
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+
+                    if (questionNumber + 1 == genZQuestions.count()){
+                        val intent = Intent(this, MultipleChoiceActivity::class.java)
+                        intent.putExtra("category", currentCategory)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+
+                binding.tvOptionThree.setOnClickListener {
+                    if (binding.tvOptionThree.text == currentQuestion.answer){
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("imageBasedQuestions", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+
+                    if (questionNumber + 1 == genZQuestions.count()){
+                        val intent = Intent(this, MultipleChoiceActivity::class.java)
                         intent.putExtra("category", currentCategory)
                         startActivity(intent)
                         finish()

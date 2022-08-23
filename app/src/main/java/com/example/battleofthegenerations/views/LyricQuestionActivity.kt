@@ -4,9 +4,12 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.battleofthegenerations.CategoryView
 import com.example.battleofthegenerations.databinding.ActivityLyricQuestionBinding
 import com.example.battleofthegenerations.models.BoomerConstants.getBoomerLyricQuestions
 import com.example.battleofthegenerations.models.GenXConstants.getGenXLyricQuestions
+import com.example.battleofthegenerations.models.GenZConstants.getGenZLyricQuestions
+import com.example.battleofthegenerations.models.MillennialConstants.getMillennialLyricQuestions
 import com.example.battleofthegenerations.models.MissingLyricQuestion
 
 class LyricQuestionActivity : AppCompatActivity() {
@@ -78,6 +81,80 @@ class LyricQuestionActivity : AppCompatActivity() {
 
                         if (questionNumber + 1 == lyricQuestions.count()){
                             val intent = Intent(this, MultipleChoiceActivity::class.java)
+                            intent.putExtra("category", currentCategory)
+                            startActivity(intent)
+                        } else {
+                            val intent = Intent(this, LyricQuestionActivity::class.java)
+                            intent.putExtra("category", currentCategory)
+                            intent.putExtra("questionNumber", questionNumber + 1)
+                            startActivity(intent)
+                            finish()
+                        }
+
+                    } else {
+                        val intent = Intent(this, LyricQuestionActivity::class.java)
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("questionNumber", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+            }
+            "millennial"->{
+                val lyricQuestions = getMillennialLyricQuestions()
+                val currentQuestion = lyricQuestions[questionNumber]
+                updateUI(currentQuestion)
+
+                binding.btnNext.setOnClickListener {
+                    val answer = binding.etAnswer.text
+                    if ("$answer" == currentQuestion.answer){
+
+                        val intent = Intent(this, LyricQuestionActivity::class.java)
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("questionNumber", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+
+                        if (questionNumber + 1 == lyricQuestions.count()){
+                            //TODO: Navigate to result screen
+                            val intent = Intent(this, CategoryView::class.java)
+                            intent.putExtra("category", currentCategory)
+                            startActivity(intent)
+                        } else {
+                            val intent = Intent(this, LyricQuestionActivity::class.java)
+                            intent.putExtra("category", currentCategory)
+                            intent.putExtra("questionNumber", questionNumber + 1)
+                            startActivity(intent)
+                            finish()
+                        }
+
+                    } else {
+                        val intent = Intent(this, LyricQuestionActivity::class.java)
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("questionNumber", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+            }
+            "gen_z"->{
+                val lyricQuestions = getGenZLyricQuestions()
+                val currentQuestion = lyricQuestions[questionNumber]
+                updateUI(currentQuestion)
+
+                binding.btnNext.setOnClickListener {
+                    val answer = binding.etAnswer.text
+                    if ("$answer" == currentQuestion.answer){
+
+                        val intent = Intent(this, LyricQuestionActivity::class.java)
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("questionNumber", questionNumber + 1)
+                        startActivity(intent)
+                        finish()
+
+                        if (questionNumber + 1 == lyricQuestions.count()){
+                            //TODO: Navigate to result screen
+                            val intent = Intent(this, CategoryView::class.java)
                             intent.putExtra("category", currentCategory)
                             startActivity(intent)
                         } else {

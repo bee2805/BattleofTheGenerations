@@ -4,7 +4,7 @@ import com.example.battleofthegenerations.R
 
 object GenZConstants {
 
-    fun getAllGenZLyricQuestions():ArrayList<MissingLyricQuestion>{
+    fun getGenZLyricQuestions():ArrayList<MissingLyricQuestion>{
 
         val genZLyricQuestions = ArrayList<MissingLyricQuestion>()
 
@@ -30,7 +30,7 @@ object GenZConstants {
 
     }
 
-    fun getAllGenZMultipleChoiceQuestions():ArrayList<MultipleChoice>{
+    fun getGenZMultipleChoiceQuestions():ArrayList<MultipleChoice>{
 
         val genZMultipleChoiceQuestions = ArrayList<MultipleChoice>()
 
@@ -71,6 +71,37 @@ object GenZConstants {
         genZMultipleChoiceQuestions.add(genZMultipleChoice2)
         genZMultipleChoiceQuestions.add(genZMultipleChoice3)
         return genZMultipleChoiceQuestions
+    }
+
+    fun getGenZImageBasedQuestions():ArrayList<ImageBasedQuestion>{
+
+        val genZImageBasedQuestions = ArrayList<ImageBasedQuestion>()
+
+        // https://mobile.twitter.com/daviddobrik - his profile pic on twitter
+        val genZImageBasedQuestion1 = ImageBasedQuestion(
+            7,
+            R.drawable.david_dobrik,
+            "Who is this?",
+            "David Dobrik",
+            "Harry Styles",
+            "Shawn Mendes",
+            "David Dobrik"
+        )
+
+        // https://en.wikipedia.org/wiki/Dab_%28dance%29
+        val genZImageBasedQuestion2 = ImageBasedQuestion(
+            8,
+            R.drawable.dab,
+            "What dance move is this?",
+            "Dabbing",
+            "flossing",
+            "Twerking",
+            "Dabbing"
+        )
+
+        genZImageBasedQuestions.add(genZImageBasedQuestion1)
+        genZImageBasedQuestions.add(genZImageBasedQuestion2)
+        return genZImageBasedQuestions
     }
 
 }

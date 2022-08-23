@@ -6,7 +6,7 @@ object MillennialConstants {
 
     // this function returns all questions
     // this is where we will se all of our set questions
-    fun getAllMillennialLyricQuestions():ArrayList<MissingLyricQuestion>{
+    fun getMillennialLyricQuestions():ArrayList<MissingLyricQuestion>{
 
         val millennialLyricQuestions = ArrayList<MissingLyricQuestion>()
 
@@ -28,11 +28,11 @@ object MillennialConstants {
 
         millennialLyricQuestions.add(millennialMissingLyric1)
         millennialLyricQuestions.add(millennialMissingLyric2)
-        return  millennialLyricQuestions
+        return millennialLyricQuestions
 
     }
 
-    fun getAllMillennialMultipleChoiceQuestions():ArrayList<MultipleChoice>{
+    fun getMillennialMultipleChoiceQuestions():ArrayList<MultipleChoice>{
 
         val millennialMultipleChoiceQuestions = ArrayList<MultipleChoice>()
 
@@ -75,7 +75,7 @@ object MillennialConstants {
         return millennialMultipleChoiceQuestions
     }
 
-    fun getAllMillennialImageBasedQuestions():ArrayList<ImageBasedQuestion>{
+    fun getMillennialImageBasedQuestions():ArrayList<ImageBasedQuestion>{
 
         val millennialImageBasedQuestions = ArrayList<ImageBasedQuestion>()
 
