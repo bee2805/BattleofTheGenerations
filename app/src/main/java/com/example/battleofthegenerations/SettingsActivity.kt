@@ -1,6 +1,7 @@
 package com.example.battleofthegenerations
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.battleofthegenerations.databinding.ActivityMainBinding
@@ -20,9 +21,4 @@ class SettingsActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
-
-//    public void boomer_website(View view){
-//        intent
-//    }
-
 }
