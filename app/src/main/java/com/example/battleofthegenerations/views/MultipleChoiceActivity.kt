@@ -272,10 +272,11 @@ class MultipleChoiceActivity : AppCompatActivity() {
             }
 
             "gen_z"->{
+                Log.i("success", currentCategory)
                 val genZQuestions = getGenZMultipleChoiceQuestions()
                 val currentQuestion = genZQuestions[questionNumber]
                 updateUI(currentQuestion)
-
+//
                 binding.tvOptionOne.setOnClickListener {
                     if (binding.tvOptionOne.text == currentQuestion.answer){
                         intent.putExtra("category", currentCategory)

@@ -36,8 +36,8 @@ object GenZConstants {
 
         // https://www.buzzfeed.com/farrahpenn/these-trivia-questions-will-separate-gen-z-cuspers-from
         val genZMultipleChoice1 = MultipleChoice(
-            R.drawable.lily_oliver,
             10,
+            R.drawable.lily_oliver,
             "What were the names of Miley's two best friends on Hannah Montanna?",
             "Oscar and Lola",
             "Lily and Oliver",
