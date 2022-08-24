@@ -73,11 +73,9 @@
         android:padding="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/primary_green"
+        android:backgroundTint="@color/dark_green"
         android:textColor="@color/white"
         app:cardCornerRadius="10dp"
-        app:strokeColor="@color/dark_green"
-        app:strokeWidth="3dp"
         android:text="next"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="30dp"/>

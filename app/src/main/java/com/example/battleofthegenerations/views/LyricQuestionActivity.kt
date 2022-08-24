@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.example.battleofthegenerations.CategoryView
+import com.example.battleofthegenerations.ResultActivity
 import com.example.battleofthegenerations.databinding.ActivityLyricQuestionBinding
 import com.example.battleofthegenerations.models.BoomerConstants.getBoomerLyricQuestions
 import com.example.battleofthegenerations.models.GenXConstants.getGenXLyricQuestions
@@ -116,8 +117,7 @@ class LyricQuestionActivity : AppCompatActivity() {
                         finish()
 
                         if (questionNumber + 1 == lyricQuestions.count()){
-                            //TODO: Navigate to result screen
-                            val intent = Intent(this, CategoryView::class.java)
+                            val intent = Intent(this, ResultActivity::class.java)
                             intent.putExtra("category", currentCategory)
                             startActivity(intent)
                         } else {
@@ -153,8 +153,7 @@ class LyricQuestionActivity : AppCompatActivity() {
                         finish()
 
                         if (questionNumber + 1 == lyricQuestions.count()){
-                            //TODO: Navigate to result screen
-                            val intent = Intent(this, CategoryView::class.java)
+                            val intent = Intent(this, ResultActivity::class.java)
                             intent.putExtra("category", currentCategory)
                             startActivity(intent)
                         } else {

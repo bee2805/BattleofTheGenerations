@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.example.battleofthegenerations.CategoryView
+import com.example.battleofthegenerations.ResultActivity
 import com.example.battleofthegenerations.databinding.ActivityMultipleChoiceBinding
 import com.example.battleofthegenerations.models.*
 import com.example.battleofthegenerations.models.BoomerConstants.getBoomerMultipleChoiceQuestions
@@ -129,8 +130,7 @@ class MultipleChoiceActivity : AppCompatActivity() {
                     }
 
                     if(questionNumber + 1 == genXQuestions.count()){
-                        //TODO: Navigate to the results screen
-                        val intent = Intent(this, CategoryView::class.java)
+                        val intent = Intent(this, ResultActivity::class.java)
                         startActivity(intent)
                     } else {
                         intent.putExtra("category", currentCategory)
@@ -153,8 +153,7 @@ class MultipleChoiceActivity : AppCompatActivity() {
                         finish()
                     }
                     if(questionNumber + 1 == genXQuestions.count()){
-                        //TODO: Navigate to the results screen
-                        val intent = Intent(this, CategoryView::class.java)
+                        val intent = Intent(this, ResultActivity::class.java)
                         startActivity(intent)
                     } else {
                         intent.putExtra("category", currentCategory)
@@ -177,8 +176,7 @@ class MultipleChoiceActivity : AppCompatActivity() {
                         finish()
                     }
                     if(questionNumber + 1 == genXQuestions.count()){
-                        //TODO: Navigate to the results screen
-                        val intent = Intent(this, CategoryView::class.java)
+                        val intent = Intent(this, ResultActivity::class.java)
                         startActivity(intent)
                     } else {
                         intent.putExtra("category", currentCategory)

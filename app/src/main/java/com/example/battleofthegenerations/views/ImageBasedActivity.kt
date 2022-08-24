@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.battleofthegenerations.CategoryView
+import com.example.battleofthegenerations.ResultActivity
 import com.example.battleofthegenerations.databinding.ActivityImageBasedBinding
 import com.example.battleofthegenerations.models.BoomerConstants.getBoomerImageBasedQuestions
 import com.example.battleofthegenerations.models.GenXConstants.getGenXImageBasedQuestions
@@ -45,8 +46,7 @@ class ImageBasedActivity : AppCompatActivity() {
                     }
 
                     if (questionNumber + 1 == questions.count()){
-                        // TODO: navigate to the results screen
-                        val intent = Intent(this, CategoryView::class.java)
+                        val intent = Intent(this, ResultActivity::class.java)
                         startActivity(intent)
                         finish()
                     } else {
@@ -71,8 +71,7 @@ class ImageBasedActivity : AppCompatActivity() {
                     }
 
                     if (questionNumber + 1 == questions.count()){
-                        // TODO: navigate to the results screen
-                        val intent = Intent(this, CategoryView::class.java)
+                        val intent = Intent(this, ResultActivity::class.java)
                         startActivity(intent)
                         finish()
                     } else {
@@ -97,8 +96,7 @@ class ImageBasedActivity : AppCompatActivity() {
                     }
 
                     if (questionNumber + 1 == questions.count()){
-                        // TODO: navigate to the results screen
-                        val intent = Intent(this, CategoryView::class.java)
+                        val intent = Intent(this, ResultActivity::class.java)
                         startActivity(intent)
                         finish()
                     } else {
