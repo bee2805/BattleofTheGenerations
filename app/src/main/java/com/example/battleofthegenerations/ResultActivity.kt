@@ -57,6 +57,10 @@ class ResultActivity : AppCompatActivity() {
         }
 
         binding.btnHome.setOnClickListener {
+            setBoomerHighScore(username, finalScore)
+            setGenXHighScore(username, finalScore)
+            setMillennialHighScore(username,finalScore)
+            setGenZHighScore(username,finalScore)
             val intent = Intent(this, CategoryView::class.java)
             intent.putExtra("username", username)
             intent.putExtra("currentCategory", currentCategory)
