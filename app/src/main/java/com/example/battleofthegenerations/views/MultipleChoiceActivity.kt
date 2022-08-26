@@ -31,7 +31,6 @@ class MultipleChoiceActivity : AppCompatActivity() {
         var score : Int = intent.getIntExtra("score", 0)
 
         when(currentCategory){
-
             "boomer"->{
                 val questions = getBoomerMultipleChoiceQuestions()
                 val currentQuestion = questions[questionNumber]

@@ -43,49 +43,28 @@ class ResultActivity : AppCompatActivity() {
 
         when(currentCategory){
             "boomer"->{
-                binding.btnHome.setOnClickListener {
-                    setBoomerHighScore(username, finalScore)
-
-                    val intent = Intent(this, CategoryView::class.java)
-                    intent.putExtra("currentCategory", currentCategory)
-                    startActivity(intent)
-                    finish()
-                }
+                setBoomerHighScore(username, finalScore)
             }
             "gen_x"->{
-                binding.btnHome.setOnClickListener {
-                    setGenXHighScore(username, finalScore)
-
-                    val intent = Intent(this, CategoryView::class.java)
-                    intent.putExtra("currentCategory", currentCategory)
-                    startActivity(intent)
-                    finish()
-                }
+                setGenXHighScore(username, finalScore)
             }
             "millennial"->{
-                binding.btnHome.setOnClickListener {
-                    setMillennialHighScore(username, finalScore)
-
-                    val intent = Intent(this, CategoryView::class.java)
-                    intent.putExtra("currentCategory", currentCategory)
-                    startActivity(intent)
-                    finish()
-                }
+                setMillennialHighScore(username,finalScore)
             }
             "gen_z"->{
-                binding.btnHome.setOnClickListener {
-                    setGenZHighScore(username, finalScore)
-
-                    val intent = Intent(this, CategoryView::class.java)
-                    intent.putExtra("currentCategory", currentCategory)
-                    intent.putExtra("finalScore", finalScore)
-                    startActivity(intent)
-                    finish()
-                }
+                setGenZHighScore(username,finalScore)
             }
         }
-    }
 
+        binding.btnHome.setOnClickListener {
+            val intent = Intent(this, CategoryView::class.java)
+            intent.putExtra("username", username)
+            intent.putExtra("currentCategory", currentCategory)
+            intent.putExtra("finalScore", finalScore)
+            startActivity(intent)
+            finish()
+        }
+    }
     private fun setBoomerHighScore(username: String, result: Int){
         val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
         val editor = sharedPref.edit()
