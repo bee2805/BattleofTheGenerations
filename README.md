@@ -123,7 +123,7 @@ I implemented a splash screen that displays as soon as the application is opened
 ![image3][image3]
 ### Categories
 
-The user can choose different categories that they’d like to play.
+The user can choose different categories that they would like to play.
 
 ![image4][image4]
 ### Questions
@@ -186,12 +186,11 @@ The `Development Process` is the technical implementations and functionality don
 * I struggled to set the session storage for the scores from each category from the results activity.
 
 
-<!-- #### Above And Beyond
+#### Above And Beyond
 
-What aspects of this final build contribute to the `Above And Beyond` Component of your brief?
-<!-- what did you learn outside of the classroom and implement into your project-->
-<!-- * Name of Skill Explored.
-* Explain your understanding and execution of above skill. --> -->
+* I implemented different ways in which a question can be answered - Either a text input with appropriate validation or selecting between three answers.
+* 7 questions per category instead of 5
+* 4 categories instead of 3
 
 ### Future Implementation
 <!-- stipulate functionality and improvements that can be implemented in the future. -->
@@ -241,8 +240,8 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 * [OK Boomer Website](https://okboomer.game/)
 * [OK Boomer Instagram](https://www.instagram.com/okboomer.game/)
 * [OK Boomer Behance Project](https://www.behance.net/gallery/145988733/Ok-Boomer-Branding-and-Design-for-Trivia-Game)
-* [Boomer Questions and imagery Source 1](path/to/resource)
-* [Boomer Questions and imagery Source 2](path/to/resource)
-* [Gen X Questions](path/to/resource)
-* [Millennial Questions](path/to/resource)
-* [Gen Z Questions](path/to/resource)
+* [Boomer Questions and imagery Source 1](https://www.buzzfeed.com/briangalindo/quiz-that-is-easy-for-baby-boomers-only)
+* [Boomer Questions and imagery Source 2](https://www.buzzfeed.com/sarahaspler/boomer-trivia-quiz)
+* [Gen X Questions](https://www.buzzfeed.com/briangalindo/only-gen-xers-are-passing-this-quiz)
+* [Millennial Questions](https://www.buzzfeed.com/briangalindo/easy-2000s-trivia-quiz-for-millennials)
+* [Gen Z Questions](https://www.buzzfeed.com/farrahpenn/these-trivia-questions-will-separate-gen-z-cuspers-from)
