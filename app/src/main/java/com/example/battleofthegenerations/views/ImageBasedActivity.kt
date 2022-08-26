@@ -23,6 +23,7 @@ class ImageBasedActivity : AppCompatActivity() {
         binding = ActivityImageBasedBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val username = intent.getStringExtra("username").toString()
         val currentCategory = intent.getStringExtra("category").toString()
         var questionNumber : Int = intent.getIntExtra("imageBasedQuestions", 0)
         var score : Int = intent.getIntExtra("score", 0)
@@ -37,12 +38,14 @@ class ImageBasedActivity : AppCompatActivity() {
                     if(binding.tvOptionOne.text == currentQuestion.answer){
                         score += 1
 
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -52,10 +55,13 @@ class ImageBasedActivity : AppCompatActivity() {
 
                     if (questionNumber + 1 == questions.count()){
                         val intent = Intent(this, ResultActivity::class.java)
+                        intent.putExtra("currentCategory", currentCategory)
+                        intent.putExtra("username", username)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -68,12 +74,14 @@ class ImageBasedActivity : AppCompatActivity() {
                     if(binding.tvOptionTwo.text == currentQuestion.answer){
                         score += 1
 
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -83,10 +91,13 @@ class ImageBasedActivity : AppCompatActivity() {
 
                     if (questionNumber + 1 == questions.count()){
                         val intent = Intent(this, ResultActivity::class.java)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentCategory", currentCategory)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -99,12 +110,14 @@ class ImageBasedActivity : AppCompatActivity() {
                     if (binding.tvOptionThree.text == currentQuestion.answer){
                         score += 1
 
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -114,10 +127,13 @@ class ImageBasedActivity : AppCompatActivity() {
 
                     if (questionNumber + 1 == questions.count()){
                         val intent = Intent(this, ResultActivity::class.java)
+                        intent.putExtra("username", username)
+                        intent.putExtra("currentCategory", currentCategory)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -137,12 +153,14 @@ class ImageBasedActivity : AppCompatActivity() {
                     if (binding.tvOptionOne.text == currentQuestion.answer){
                         score += 1
 
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -152,11 +170,13 @@ class ImageBasedActivity : AppCompatActivity() {
 
                     if (questionNumber + 1 == genXQuestions.count()){
                         val intent = Intent(this, LyricQuestionActivity::class.java)
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -169,12 +189,14 @@ class ImageBasedActivity : AppCompatActivity() {
                     if (binding.tvOptionTwo.text == currentQuestion.answer){
                         score += 1
 
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -184,11 +206,13 @@ class ImageBasedActivity : AppCompatActivity() {
 
                     if (questionNumber + 1 == genXQuestions.count()){
                         val intent = Intent(this, LyricQuestionActivity::class.java)
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -201,12 +225,14 @@ class ImageBasedActivity : AppCompatActivity() {
                     if (binding.tvOptionThree.text == currentQuestion.answer){
                         score += 1
 
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -216,11 +242,13 @@ class ImageBasedActivity : AppCompatActivity() {
 
                     if (questionNumber + 1 == genXQuestions.count()){
                         val intent = Intent(this, LyricQuestionActivity::class.java)
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -239,12 +267,14 @@ class ImageBasedActivity : AppCompatActivity() {
                     if (binding.tvOptionOne.text == currentQuestion.answer){
                         score += 1
 
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -254,11 +284,13 @@ class ImageBasedActivity : AppCompatActivity() {
 
                     if (questionNumber + 1 == millennialQuestion.count()){
                         val intent = Intent(this, LyricQuestionActivity::class.java)
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -271,12 +303,14 @@ class ImageBasedActivity : AppCompatActivity() {
                     if (binding.tvOptionTwo.text == currentQuestion.answer){
                         score += 1
 
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -286,11 +320,13 @@ class ImageBasedActivity : AppCompatActivity() {
 
                     if (questionNumber + 1 == millennialQuestion.count()){
                         val intent = Intent(this, LyricQuestionActivity::class.java)
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -303,12 +339,14 @@ class ImageBasedActivity : AppCompatActivity() {
                     if (binding.tvOptionThree.text == currentQuestion.answer){
                         score += 1
 
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -318,11 +356,13 @@ class ImageBasedActivity : AppCompatActivity() {
 
                     if (questionNumber + 1 == millennialQuestion.count()){
                         val intent = Intent(this, LyricQuestionActivity::class.java)
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -340,12 +380,14 @@ class ImageBasedActivity : AppCompatActivity() {
                     if (binding.tvOptionOne.text == currentQuestion.answer){
                         score += 1
 
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -355,11 +397,13 @@ class ImageBasedActivity : AppCompatActivity() {
 
                     if (questionNumber + 1 == genZQuestions.count()){
                         val intent = Intent(this, MultipleChoiceActivity::class.java)
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -372,12 +416,14 @@ class ImageBasedActivity : AppCompatActivity() {
                     if (binding.tvOptionTwo.text == currentQuestion.answer){
                         score += 1
 
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -387,11 +433,13 @@ class ImageBasedActivity : AppCompatActivity() {
 
                     if (questionNumber + 1 == genZQuestions.count()){
                         val intent = Intent(this, MultipleChoiceActivity::class.java)
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -404,12 +452,14 @@ class ImageBasedActivity : AppCompatActivity() {
                     if (binding.tvOptionThree.text == currentQuestion.answer){
                         score += 1
 
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)
@@ -419,11 +469,13 @@ class ImageBasedActivity : AppCompatActivity() {
 
                     if (questionNumber + 1 == genZQuestions.count()){
                         val intent = Intent(this, MultipleChoiceActivity::class.java)
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("score", score)
                         startActivity(intent)
                         finish()
                     } else {
+                        intent.putExtra("username", username)
                         intent.putExtra("category", currentCategory)
                         intent.putExtra("imageBasedQuestions", questionNumber + 1)
                         intent.putExtra("score", score)

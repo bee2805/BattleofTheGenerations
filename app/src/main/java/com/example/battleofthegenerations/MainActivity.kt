@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity() {
 
             // getting input value
             val username = binding.etUsername.text
-            Log.i("Clicked: ", "$username")
 
             // checking if it is empty
             if(username.toString() == ""){

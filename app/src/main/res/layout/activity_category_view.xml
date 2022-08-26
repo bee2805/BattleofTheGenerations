@@ -10,6 +10,16 @@
     android:background="@color/primary_dark_blue"
     android:gravity="center">
 
+    <!-- https://www.flaticon.com/free-icon/request_7887104?term=question&page=1&position=38&page=1&position=38&related_id=7887104&origin=search -->
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_last_user"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        app:borderWidth="0dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:src="@drawable/fab"/>-->
+
     <!--  https://www.flaticon.com/free-icon/gear_484562?term=settings&page=1&position=34&page=1&position=34&related_id=484562&origin=search  -->
 
     <ImageView
@@ -24,16 +34,15 @@
         android:id="@+id/tv_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="52dp"
         android:text="@string/greeting_user"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -92,6 +101,14 @@
                     android:textSize="21sp"
                     android:textStyle="bold" />
 
+                <TextView
+                    android:id="@+id/tv_boomer_last_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Last Score:"
+                    android:textColor="@color/light"
+                    android:textAlignment="center" />
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="86dp"
@@ -134,6 +151,14 @@
                     android:textColor="@color/white"
                     android:textSize="21sp"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_genX_last_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Last Score:"
+                    android:textColor="@color/light"
+                    android:textAlignment="center" />
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -191,6 +216,14 @@
                     android:textSize="21sp"
                     android:textStyle="bold" />
 
+                <TextView
+                    android:id="@+id/tv_millennial_last_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Last Score:"
+                    android:textColor="@color/white"
+                    android:textAlignment="center" />
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="86dp"
@@ -234,6 +267,14 @@
                     android:textSize="21sp"
                     android:textStyle="bold" />
 
+                <TextView
+                    android:id="@+id/tv_genZ_last_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Last Score:"
+                    android:textColor="@color/light"
+                    android:textAlignment="center" />
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="86dp"
@@ -244,60 +285,60 @@
         </com.google.android.material.card.MaterialCardView> <!--  CARD FOUR  -->
     </LinearLayout>
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/all_categories"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardBackgroundColor="@color/primary_yellow"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:strokeColor="@color/dark_yellow"
-        app:strokeWidth="3dp">
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:id="@+id/all_categories"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardBackgroundColor="@color/primary_yellow"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout"-->
+<!--        app:strokeColor="@color/dark_yellow"-->
+<!--        app:strokeWidth="3dp">-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:orientation="horizontal"
-            android:paddingTop="10dp"
-            android:paddingRight="10dp">
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:paddingTop="10dp"-->
+<!--            android:paddingRight="10dp">-->
 
-            <ImageView
-                android:layout_width="180dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/all_generations" />
+<!--            <ImageView-->
+<!--                android:layout_width="180dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:src="@drawable/all_generations" />-->
 
-            <LinearLayout
-                android:layout_width="145dp"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
+<!--            <LinearLayout-->
+<!--                android:layout_width="145dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="-5dp"
-                    android:paddingLeft="10dp"
-                    android:text="@string/category5_heading"
-                    android:textAlignment="center"
-                    android:textColor="@color/dark_yellow"
-                    android:textStyle="bold" />
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="-5dp"-->
+<!--                    android:paddingLeft="10dp"-->
+<!--                    android:text="@string/category5_heading"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/dark_yellow"-->
+<!--                    android:textStyle="bold" />-->
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:text="@string/category5"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingLeft="10dp"-->
+<!--                    android:text="@string/category5"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </LinearLayout>-->
 
-        </LinearLayout>
+<!--        </LinearLayout>-->
 
-    </com.google.android.material.card.MaterialCardView>
+<!--    </com.google.android.material.card.MaterialCardView>-->
 
     <TextView
         android:layout_width="match_parent"
