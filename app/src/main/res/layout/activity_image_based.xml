@@ -8,24 +8,37 @@
     android:padding="30dp"
     android:background="@color/primary_dark_blue">
 
-    <TextView
-        android:id="@+id/textView5"
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Question 1 0f 5"
-        android:textColor="@color/white"
+        android:layout_height="5dp"
+        android:max="7"
+        android:progress="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:text="1/7"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
     <ImageView
         android:id="@+id/iv_ib_ques"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="270dp"
         android:src="@drawable/bell_bottoms"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_progress"
         android:layout_marginTop="20dp"/>
 
     <TextView
@@ -34,12 +47,13 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:text="What style pants are these?"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="21sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cv_option_one"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_ib_ques" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cv_option_one"

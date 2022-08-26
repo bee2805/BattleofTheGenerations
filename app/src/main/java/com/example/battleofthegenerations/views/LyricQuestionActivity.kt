@@ -28,6 +28,8 @@ class LyricQuestionActivity : AppCompatActivity() {
 
         var questionNumber : Int = intent.getIntExtra("questionNumber", 0)
 
+        //set action bar
+
         when(currentCategory){
             "boomer"->{
                 val lyricQuestions = getBoomerLyricQuestions()
@@ -199,6 +201,7 @@ class LyricQuestionActivity : AppCompatActivity() {
     fun updateUI (currentQuestion: MissingLyricQuestion){
         binding.tvLyricQuestion.text = currentQuestion.questionText
         binding.ivLyricImage.setImageResource(currentQuestion.questionImage)
+        binding.progressBar.progress = currentQuestion.id
     }
 }
 

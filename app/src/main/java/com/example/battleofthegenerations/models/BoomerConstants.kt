@@ -38,7 +38,7 @@ object BoomerConstants {
 
         // https://www.buzzfeed.com/sarahaspler/boomer-trivia-quiz
         val boomerMultipleChoice1 = MultipleChoice(
-            1,
+            3,
             R.drawable.woodstock,
             "What was the most iconic festival of the 1960's?",
             "Woodstock",
@@ -49,7 +49,7 @@ object BoomerConstants {
 
         // https://www.buzzfeed.com/sarahaspler/boomer-trivia-quiz
         val boomerMultipleChoice2 = MultipleChoice(
-            2,
+            4,
             R.drawable.sputnik,
             "What was the name of the first satellite launched into space",
             "Telstar",
@@ -60,7 +60,7 @@ object BoomerConstants {
 
         // https://www.buzzfeed.com/sarahaspler/boomer-trivia-quiz
         val boomerMultipleChoice3 = MultipleChoice(
-            3,
+            5,
             R.drawable.beetlemania,
             "What was the term used to describe the rise of the Beetles?",
             "Beetlefever",
@@ -80,7 +80,7 @@ object BoomerConstants {
         val boomerImageBasedQuestions = ArrayList<ImageBasedQuestion>()
 
         val boomerImageBasedQuestion1 = ImageBasedQuestion(
-            1,
+            6,
             R.drawable.howdy_dowdy,
             "Can you remember the name of this puppet show?",
             "Archie Andrews",
@@ -91,7 +91,7 @@ object BoomerConstants {
 
         // https://www.insider.com/jeans-over-the-years-2018-8
         val boomerImageBasedQuestion2 = ImageBasedQuestion(
-            2,
+            7,
             R.drawable.bell_bottoms,
             "What style pants are these?",
             "Flare",
