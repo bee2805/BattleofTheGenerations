@@ -20,11 +20,10 @@
     <img src="app/src/main/res/drawable/logo.png" alt="Logo" width="140" height="140">
   </a>
   
-  <h3 align="center">OpenSpace</h3>
+  <h3 align="center">OK Boomer</h3>
 
   <p align="center">
-    A react project using the Space X Api to demonstrate data visualization using charts js  <br>
-    <i>This However is a template file for DV200 Students!</i> 
+    In light of the quiz craze that arised during the Covid19 Pandemic, I decided to create a trivia app that would bring together individials from different backgrounds.  The OK Boomer mobile game was designed and build using Kotlin and in Android Studio.<br>
     
    <br />
    <br />
@@ -65,11 +64,11 @@
 <!--PROJECT DESCRIPTION-->
 ## About the Project
 <!-- header image of project -->
-![image1][image1]
+![image1](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/cover_photo.jpg)
 
 ### Project Description
 
-A nice introduction to this amazing project of mine.
+Welcome to the OK Boomer mobile trivia application! It is no secret that each generation thinks they’re better than the next, so, this game was designed to put that to the test!
 
 ### Built With
 
