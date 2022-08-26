@@ -24,6 +24,8 @@
     <color name="primary_yellow">#ffda72</color>
     <color name="dark_yellow">#fbb900</color>
 
+    <color name="error">#D1403F</color>
+
     <color name="dark">#2d2d2d</color>
     <color name="light">#e2e2e2</color>
 </resources>

@@ -12,6 +12,7 @@ import com.example.battleofthegenerations.models.GenXConstants.getGenXLyricQuest
 import com.example.battleofthegenerations.models.GenZConstants.getGenZLyricQuestions
 import com.example.battleofthegenerations.models.MillennialConstants.getMillennialLyricQuestions
 import com.example.battleofthegenerations.models.MissingLyricQuestion
+import java.lang.Character.toLowerCase
 
 class LyricQuestionActivity : AppCompatActivity() {
 
@@ -25,8 +26,8 @@ class LyricQuestionActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val currentCategory = intent.getStringExtra("category").toString()
-
         var questionNumber : Int = intent.getIntExtra("questionNumber", 0)
+        var score : Int = intent.getIntExtra("score", 0)
 
         //set action bar
 
@@ -43,29 +44,34 @@ class LyricQuestionActivity : AppCompatActivity() {
                     if("$answer" == ""){
                         binding.etAnswer.error = "Please add your Answer"
                     } else {
-                        if("$answer" == currentQuestion.answer){
+                        if("$answer".lowercase() == currentQuestion.answer){
+                            score += 1
                             val intent = Intent(this, LyricQuestionActivity::class.java)
                             intent.putExtra("category", currentCategory)
                             intent.putExtra("questionNumber", questionNumber + 1)
+                            intent.putExtra("score", score)
                             startActivity(intent)
                             finish()
-
-                            if(questionNumber + 1 == lyricQuestions.count()){
-                                val intent = Intent(this, MultipleChoiceActivity::class.java)
-                                intent.putExtra("category", currentCategory)
-                                startActivity(intent)
-                            } else {
-                                val intent = Intent(this, LyricQuestionActivity::class.java)
-                                intent.putExtra("category", currentCategory)
-                                intent.putExtra("questionNumber", questionNumber + 1)
-                                startActivity(intent)
-                                finish()
-                            }
 
                         } else {
                             val intent = Intent(this, LyricQuestionActivity::class.java)
                             intent.putExtra("category", currentCategory)
                             intent.putExtra("questionNumber", questionNumber + 1)
+                            intent.putExtra("score", score)
+                            startActivity(intent)
+                            finish()
+                        }
+
+                        if(questionNumber + 1 == lyricQuestions.count()){
+                            val intent = Intent(this, MultipleChoiceActivity::class.java)
+                            intent.putExtra("category", currentCategory)
+                            intent.putExtra("score", score)
+                            startActivity(intent)
+                        } else {
+                            val intent = Intent(this, LyricQuestionActivity::class.java)
+                            intent.putExtra("category", currentCategory)
+                            intent.putExtra("questionNumber", questionNumber + 1)
+                            intent.putExtra("score", score)
                             startActivity(intent)
                             finish()
                         }
@@ -83,30 +89,35 @@ class LyricQuestionActivity : AppCompatActivity() {
                     if("$answer" == ""){
                         binding.etAnswer.error = "Please add your Answer"
                     } else {
-                        if ("$answer" == currentQuestion.answer){
+                        if ("$answer".lowercase() == currentQuestion.answer){
+                            score += 1
 
                             val intent = Intent(this, LyricQuestionActivity::class.java)
                             intent.putExtra("category", currentCategory)
                             intent.putExtra("questionNumber", questionNumber + 1)
+                            intent.putExtra("score", score)
                             startActivity(intent)
                             finish()
-
-                            if (questionNumber + 1 == lyricQuestions.count()){
-                                val intent = Intent(this, MultipleChoiceActivity::class.java)
-                                intent.putExtra("category", currentCategory)
-                                startActivity(intent)
-                            } else {
-                                val intent = Intent(this, LyricQuestionActivity::class.java)
-                                intent.putExtra("category", currentCategory)
-                                intent.putExtra("questionNumber", questionNumber + 1)
-                                startActivity(intent)
-                                finish()
-                            }
 
                         } else {
                             val intent = Intent(this, LyricQuestionActivity::class.java)
                             intent.putExtra("category", currentCategory)
                             intent.putExtra("questionNumber", questionNumber + 1)
+                            intent.putExtra("score", score)
+                            startActivity(intent)
+                            finish()
+                        }
+
+                        if (questionNumber + 1 == lyricQuestions.count()){
+                            val intent = Intent(this, MultipleChoiceActivity::class.java)
+                            intent.putExtra("category", currentCategory)
+                            intent.putExtra("score", score)
+                            startActivity(intent)
+                        } else {
+                            val intent = Intent(this, LyricQuestionActivity::class.java)
+                            intent.putExtra("category", currentCategory)
+                            intent.putExtra("questionNumber", questionNumber + 1)
+                            intent.putExtra("score", score)
                             startActivity(intent)
                             finish()
                         }
@@ -124,30 +135,35 @@ class LyricQuestionActivity : AppCompatActivity() {
                     if("$answer" == ""){
                         binding.etAnswer.error = "Please add your Answer"
                     } else {
-                        if ("$answer" == currentQuestion.answer){
+                        if ("$answer".lowercase() == currentQuestion.answer){
+                            score += 1
 
                             val intent = Intent(this, LyricQuestionActivity::class.java)
                             intent.putExtra("category", currentCategory)
                             intent.putExtra("questionNumber", questionNumber + 1)
+                            intent.putExtra("score", score)
                             startActivity(intent)
                             finish()
-
-                            if (questionNumber + 1 == lyricQuestions.count()){
-                                val intent = Intent(this, ResultActivity::class.java)
-                                intent.putExtra("category", currentCategory)
-                                startActivity(intent)
-                            } else {
-                                val intent = Intent(this, LyricQuestionActivity::class.java)
-                                intent.putExtra("category", currentCategory)
-                                intent.putExtra("questionNumber", questionNumber + 1)
-                                startActivity(intent)
-                                finish()
-                            }
 
                         } else {
                             val intent = Intent(this, LyricQuestionActivity::class.java)
                             intent.putExtra("category", currentCategory)
                             intent.putExtra("questionNumber", questionNumber + 1)
+                            intent.putExtra("score", score)
+                            startActivity(intent)
+                            finish()
+                        }
+
+                        if (questionNumber + 1 == lyricQuestions.count()){
+                            val intent = Intent(this, ResultActivity::class.java)
+                            intent.putExtra("category", currentCategory)
+                            intent.putExtra("score", score)
+                            startActivity(intent)
+                        } else {
+                            val intent = Intent(this, LyricQuestionActivity::class.java)
+                            intent.putExtra("category", currentCategory)
+                            intent.putExtra("questionNumber", questionNumber + 1)
+                            intent.putExtra("score", score)
                             startActivity(intent)
                             finish()
                         }
@@ -165,30 +181,35 @@ class LyricQuestionActivity : AppCompatActivity() {
                     if("$answer" == ""){
                         binding.etAnswer.error = "Please add your Answer"
                     } else {
-                        if ("$answer" == currentQuestion.answer){
+                        if ("$answer".lowercase() == currentQuestion.answer){
+                            score += 1
 
                             val intent = Intent(this, LyricQuestionActivity::class.java)
                             intent.putExtra("category", currentCategory)
                             intent.putExtra("questionNumber", questionNumber + 1)
+                            intent.putExtra("score", score)
                             startActivity(intent)
                             finish()
-
-                            if (questionNumber + 1 == lyricQuestions.count()){
-                                val intent = Intent(this, ResultActivity::class.java)
-                                intent.putExtra("category", currentCategory)
-                                startActivity(intent)
-                            } else {
-                                val intent = Intent(this, LyricQuestionActivity::class.java)
-                                intent.putExtra("category", currentCategory)
-                                intent.putExtra("questionNumber", questionNumber + 1)
-                                startActivity(intent)
-                                finish()
-                            }
 
                         } else {
                             val intent = Intent(this, LyricQuestionActivity::class.java)
                             intent.putExtra("category", currentCategory)
                             intent.putExtra("questionNumber", questionNumber + 1)
+                            intent.putExtra("score", score)
+                            startActivity(intent)
+                            finish()
+                        }
+
+                        if (questionNumber + 1 == lyricQuestions.count()){
+                            val intent = Intent(this, ResultActivity::class.java)
+                            intent.putExtra("category", currentCategory)
+                            intent.putExtra("score", score)
+                            startActivity(intent)
+                        } else {
+                            val intent = Intent(this, LyricQuestionActivity::class.java)
+                            intent.putExtra("category", currentCategory)
+                            intent.putExtra("questionNumber", questionNumber + 1)
+                            intent.putExtra("score", score)
                             startActivity(intent)
                             finish()
                         }
@@ -198,7 +219,7 @@ class LyricQuestionActivity : AppCompatActivity() {
         }
 
     }
-    fun updateUI (currentQuestion: MissingLyricQuestion){
+    private fun updateUI (currentQuestion: MissingLyricQuestion){
         binding.tvLyricQuestion.text = currentQuestion.questionText
         binding.ivLyricImage.setImageResource(currentQuestion.questionImage)
         binding.progressBar.progress = currentQuestion.id
