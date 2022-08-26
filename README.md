@@ -23,7 +23,7 @@
   <h3 align="center">OK Boomer</h3>
 
   <p align="center">
-    In light of the quiz craze that arised during the Covid19 Pandemic, I decided to create a trivia app that would bring together individials from different backgrounds.  The OK Boomer mobile game was designed and build using Kotlin and in Android Studio.<br>
+    In light of the quiz craze that arised during the Covid19 Pandemic, I decided to create a trivia app that would bring together individials from different backgrounds.  The OK Boomer mobile game was designed and build using Kotlin and in Android Studio. This App was inspired by the OK Boomer Card Game.<br>
     
    <br />
    <br />
@@ -147,7 +147,7 @@ After setting this up, I went ahead and did some research on different trivia ga
 
 ### Ideation
 
-![image5][image5]
+![image5](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/concept_ideation.jpg)
 <br>
 ![image6][image6]
 
