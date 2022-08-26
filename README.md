@@ -72,9 +72,9 @@ Welcome to the OK Boomer mobile trivia application! It is no secret that each ge
 
 ### Built With
 
-* [React](https://reactjs.org/)
-* [Technology Name](path/to/technology/website)
-* [Technology Name](path/to/technology/website)
+* [Android Studio](https://developer.android.com/studio?gclid=CjwKCAjw3qGYBhBSEiwAcnTRLudtJ2FIlpZp7wRlpahXN_ZNMtz229FDIOG7RtDaLKjgrbFTDy7y5hoCzcYQAvD_BwE&gclsrc=aw.ds)
+* [Kotlin](https://kotlinlang.org/)
+* [XML]
 
 <!-- GETTING STARTED -->
 <!-- Make sure to add appropriate information about what prerequesite technologies the user would need and also the steps to install your project on their own mashines -->
@@ -82,11 +82,10 @@ Welcome to the OK Boomer mobile trivia application! It is no secret that each ge
 
 The following instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites
-
-Ensure that you have the latest version of [NPM](https://www.npmjs.com/) installed on your machine. The [GitHub Desktop](https://desktop.github.com/) program will also be required.
-
 ### How to install
+
+### Prerequisites
+Emsure that you have GitHub desktop downloaded onto your machine.
 
 ### Installation
 Here are a couple of ways to clone this repo:
@@ -117,19 +116,24 @@ Run the following in the command-line to install all the required dependencies:
 <!-- note how you can use your gitHub link. Just make a path to your assets folder -->
 ![image2](https://raw.githubusercontent.com/bee2805/BattleofTheGenerations/main/src/assets/mockup.jpg)
 
-### All The Latest Space X Data! 
+### Splash Screen
 
-Usding the Space X API, we have collected and collated all the most relevant Space X data into once seemless react experience!
+I implemented a splash screen that displays as soon as the application is opened by the user. It is actice for 3 and thereafter the user will be directed to the home page where they will need to add their username
 
 ![image3][image3]
-### Feature 2
+### Categories
 
-Description of Feature
+The user can choose different categories that they’d like to play.
 
 ![image4][image4]
-### Feature 3
+### Questions
 
-Description of Feature
+There are three different views for each question type. Two of the question types have three options in which you can pick between and the lyric based question view allows users to answer by typing in the answer. As the user plays each category, points will accumulate for each correct answer.
+
+![image4][image4]
+### Results/Scores
+
+The result screen displays after a user has completed a category. The score from the specific Category playes is displayed here.
 
 ![image5][image5]
 
@@ -139,7 +143,7 @@ Description of Feature
 <!-- here you will add things like wireframing, data structure planning, anything that shows your process. You need to include images-->
 ## Concept Process
 
-The `Conceptual Process` is the set of actions, activities and research that was done when starting this project.
+After setting this up, I went ahead and did some research on different trivia games or apps to get a bit of inspiration for the brand and layout of the app. It was then that I ran into this amazing card game called OK boomer on Behance. After completely falling in love with this whole idea as well as the branding, I mean, how could you not?!!! I got really inspired and decided to base my app on this card game.
 
 ### Ideation
 
@@ -164,7 +168,7 @@ The `Development Process` is the technical implementations and functionality don
 <!-- stipulate all of the functionality you included in the project -->
 <!-- This is your time to shine, explain the technical nuances of your project, how did you achieve the final outcome!-->
 
-* Utilized React `Charts.JS` dependency for Data visualization
+* Validation on inputs
 * Implemented Routing with `React-Router v6`.
 * API End Point: link Here 
 * `Plugin` for this.
@@ -172,27 +176,29 @@ The `Development Process` is the technical implementations and functionality don
 
 #### Highlights
 <!-- stipulated the highlight you experienced with the project -->
-* What was good about this project, what did you learn.
-* What aspects did you enjoy.
+* It was super exciting to learn Kotlin and build my very first android app!
+* Ater getting my muse, which was OK Boomer, the excitement grew each and every day. I had a lot of fun doing the research, especially for the lyric based questions. 
+* I had a lot of fun doing the research, especially for the lyric based questions. 
 
 #### Challenges
 <!-- stipulated the challenges you faced with the project and why you think you faced it or how you think you'll solve it (if not solved) -->
-* Bugs.
-* Bugs.
+* Because of the way I set up my questions, I had challenges when trying to navigate to the next question activity in a specific genre.
+* I struggled to set the session storage for the scores from each category from the results activity.
 
 
-#### Above And Beyond
+<!-- #### Above And Beyond
 
 What aspects of this final build contribute to the `Above And Beyond` Component of your brief?
 <!-- what did you learn outside of the classroom and implement into your project-->
-* Name of Skill Explored.
-* Explain your understanding and execution of above skill.
+<!-- * Name of Skill Explored.
+* Explain your understanding and execution of above skill. --> -->
 
 ### Future Implementation
 <!-- stipulate functionality and improvements that can be implemented in the future. -->
 
-* Future 1.
-* Future 2.
+* I'd like to implement the high scores from each category.
+* One last category where questions from different categories will be displayed. The end result will tell the user which generation their soul belongs to
+* A light and dark mode toggle in the settings menu
 
 <!-- MOCKUPS -->
 ## Final Outcome
@@ -216,7 +222,7 @@ See the [open issues](https://github.com/bee2805/BattleofTheGenerations/issues) 
 <!-- AUTHORS -->
 ## Authors
 
-* **Your Name & Surname** - [MikeMaynard14](https://github.com/MikeMaynard14)
+* **Bronwyn Potgieter** - [bee2805](https://github.com/bee2805)
 
 <!-- LICENSE -->
 ## License
@@ -226,16 +232,17 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 <!-- LICENSE -->
 ## Contact
 
-* **Your Name & Surname** - [email@address](mailto:email@address) - [@instagram_handle](https://www.instagram.com/instagram_handle/) 
+* **Bronwyn Potgieter** - [bronwyn.potgieter@yahoo.co.za](bronwyn.potgieter@yahoo.co.zas) - [@instagram_handle](https://www.instagram.com/bronns_designs/) 
 * **Project Link** - https://github.com/bee2805/BattleofTheGenerations
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 <!-- all resources that you used and Acknowledgements here -->
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
-
-
+* [OK Boomer Website](https://okboomer.game/)
+* [OK Boomer Instagram](https://www.instagram.com/okboomer.game/)
+* [OK Boomer Behance Project](https://www.behance.net/gallery/145988733/Ok-Boomer-Branding-and-Design-for-Trivia-Game)
+* [Boomer Questions and imagery Source 1](path/to/resource)
+* [Boomer Questions and imagery Source 2](path/to/resource)
+* [Gen X Questions](path/to/resource)
+* [Millennial Questions](path/to/resource)
+* [Gen Z Questions](path/to/resource)
