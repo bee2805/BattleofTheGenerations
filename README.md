@@ -149,11 +149,10 @@ After setting this up, I went ahead and did some research on different trivia ga
 
 ![image5](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/concept_ideation.jpg)
 <br>
-![image6][image6]
 
 ### Wireframes
 
-![image7][image7]
+![image6](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/wireframes.jpg)
 
 ### Custom UI
 
