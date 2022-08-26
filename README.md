@@ -230,7 +230,7 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 <!-- LICENSE -->
 ## Contact
 
-* **Bronwyn Potgieter** - [bronwyn.potgieter@yahoo.co.za](bronwyn.potgieter@yahoo.co.zas) - [@instagram_handle](https://www.instagram.com/bronns_designs/) 
+* **Bronwyn Potgieter** - [bronwyn.potgieter@yahoo.co.za](mailto:bronwyn.potgieter@yahoo.co.zas) - [@bronns_designs](https://www.instagram.com/bronns_designs/) 
 * **Project Link** - https://github.com/bee2805/BattleofTheGenerations
 
 <!-- ACKNOWLEDGEMENTS -->
