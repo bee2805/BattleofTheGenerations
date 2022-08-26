@@ -37,17 +37,29 @@ class LyricQuestionActivity : AppCompatActivity() {
                 binding.btnNext.setOnClickListener{
 
                     val answer = binding.etAnswer.text
-                    if("$answer" == currentQuestion.answer){
-                        val intent = Intent(this, LyricQuestionActivity::class.java)
-                        intent.putExtra("category", currentCategory)
-                        intent.putExtra("questionNumber", questionNumber + 1)
-                        startActivity(intent)
-                        finish()
 
-                        if(questionNumber + 1 == lyricQuestions.count()){
-                            val intent = Intent(this, MultipleChoiceActivity::class.java)
+                    if("$answer" == ""){
+                        binding.etAnswer.error = "Please add your Answer"
+                    } else {
+                        if("$answer" == currentQuestion.answer){
+                            val intent = Intent(this, LyricQuestionActivity::class.java)
                             intent.putExtra("category", currentCategory)
+                            intent.putExtra("questionNumber", questionNumber + 1)
                             startActivity(intent)
+                            finish()
+
+                            if(questionNumber + 1 == lyricQuestions.count()){
+                                val intent = Intent(this, MultipleChoiceActivity::class.java)
+                                intent.putExtra("category", currentCategory)
+                                startActivity(intent)
+                            } else {
+                                val intent = Intent(this, LyricQuestionActivity::class.java)
+                                intent.putExtra("category", currentCategory)
+                                intent.putExtra("questionNumber", questionNumber + 1)
+                                startActivity(intent)
+                                finish()
+                            }
+
                         } else {
                             val intent = Intent(this, LyricQuestionActivity::class.java)
                             intent.putExtra("category", currentCategory)
@@ -55,13 +67,6 @@ class LyricQuestionActivity : AppCompatActivity() {
                             startActivity(intent)
                             finish()
                         }
-
-                    } else {
-                        val intent = Intent(this, LyricQuestionActivity::class.java)
-                        intent.putExtra("category", currentCategory)
-                        intent.putExtra("questionNumber", questionNumber + 1)
-                        startActivity(intent)
-                        finish()
                     }
                 }
             }
@@ -72,18 +77,30 @@ class LyricQuestionActivity : AppCompatActivity() {
 
                 binding.btnNext.setOnClickListener {
                     val answer = binding.etAnswer.text
-                    if ("$answer" == currentQuestion.answer){
 
-                        val intent = Intent(this, LyricQuestionActivity::class.java)
-                        intent.putExtra("category", currentCategory)
-                        intent.putExtra("questionNumber", questionNumber + 1)
-                        startActivity(intent)
-                        finish()
+                    if("$answer" == ""){
+                        binding.etAnswer.error = "Please add your Answer"
+                    } else {
+                        if ("$answer" == currentQuestion.answer){
 
-                        if (questionNumber + 1 == lyricQuestions.count()){
-                            val intent = Intent(this, MultipleChoiceActivity::class.java)
+                            val intent = Intent(this, LyricQuestionActivity::class.java)
                             intent.putExtra("category", currentCategory)
+                            intent.putExtra("questionNumber", questionNumber + 1)
                             startActivity(intent)
+                            finish()
+
+                            if (questionNumber + 1 == lyricQuestions.count()){
+                                val intent = Intent(this, MultipleChoiceActivity::class.java)
+                                intent.putExtra("category", currentCategory)
+                                startActivity(intent)
+                            } else {
+                                val intent = Intent(this, LyricQuestionActivity::class.java)
+                                intent.putExtra("category", currentCategory)
+                                intent.putExtra("questionNumber", questionNumber + 1)
+                                startActivity(intent)
+                                finish()
+                            }
+
                         } else {
                             val intent = Intent(this, LyricQuestionActivity::class.java)
                             intent.putExtra("category", currentCategory)
@@ -91,13 +108,6 @@ class LyricQuestionActivity : AppCompatActivity() {
                             startActivity(intent)
                             finish()
                         }
-
-                    } else {
-                        val intent = Intent(this, LyricQuestionActivity::class.java)
-                        intent.putExtra("category", currentCategory)
-                        intent.putExtra("questionNumber", questionNumber + 1)
-                        startActivity(intent)
-                        finish()
                     }
                 }
             }
@@ -108,18 +118,30 @@ class LyricQuestionActivity : AppCompatActivity() {
 
                 binding.btnNext.setOnClickListener {
                     val answer = binding.etAnswer.text
-                    if ("$answer" == currentQuestion.answer){
 
-                        val intent = Intent(this, LyricQuestionActivity::class.java)
-                        intent.putExtra("category", currentCategory)
-                        intent.putExtra("questionNumber", questionNumber + 1)
-                        startActivity(intent)
-                        finish()
+                    if("$answer" == ""){
+                        binding.etAnswer.error = "Please add your Answer"
+                    } else {
+                        if ("$answer" == currentQuestion.answer){
 
-                        if (questionNumber + 1 == lyricQuestions.count()){
-                            val intent = Intent(this, ResultActivity::class.java)
+                            val intent = Intent(this, LyricQuestionActivity::class.java)
                             intent.putExtra("category", currentCategory)
+                            intent.putExtra("questionNumber", questionNumber + 1)
                             startActivity(intent)
+                            finish()
+
+                            if (questionNumber + 1 == lyricQuestions.count()){
+                                val intent = Intent(this, ResultActivity::class.java)
+                                intent.putExtra("category", currentCategory)
+                                startActivity(intent)
+                            } else {
+                                val intent = Intent(this, LyricQuestionActivity::class.java)
+                                intent.putExtra("category", currentCategory)
+                                intent.putExtra("questionNumber", questionNumber + 1)
+                                startActivity(intent)
+                                finish()
+                            }
+
                         } else {
                             val intent = Intent(this, LyricQuestionActivity::class.java)
                             intent.putExtra("category", currentCategory)
@@ -127,13 +149,6 @@ class LyricQuestionActivity : AppCompatActivity() {
                             startActivity(intent)
                             finish()
                         }
-
-                    } else {
-                        val intent = Intent(this, LyricQuestionActivity::class.java)
-                        intent.putExtra("category", currentCategory)
-                        intent.putExtra("questionNumber", questionNumber + 1)
-                        startActivity(intent)
-                        finish()
                     }
                 }
             }
@@ -144,18 +159,30 @@ class LyricQuestionActivity : AppCompatActivity() {
 
                 binding.btnNext.setOnClickListener {
                     val answer = binding.etAnswer.text
-                    if ("$answer" == currentQuestion.answer){
 
-                        val intent = Intent(this, LyricQuestionActivity::class.java)
-                        intent.putExtra("category", currentCategory)
-                        intent.putExtra("questionNumber", questionNumber + 1)
-                        startActivity(intent)
-                        finish()
+                    if("$answer" == ""){
+                        binding.etAnswer.error = "Please add your Answer"
+                    } else {
+                        if ("$answer" == currentQuestion.answer){
 
-                        if (questionNumber + 1 == lyricQuestions.count()){
-                            val intent = Intent(this, ResultActivity::class.java)
+                            val intent = Intent(this, LyricQuestionActivity::class.java)
                             intent.putExtra("category", currentCategory)
+                            intent.putExtra("questionNumber", questionNumber + 1)
                             startActivity(intent)
+                            finish()
+
+                            if (questionNumber + 1 == lyricQuestions.count()){
+                                val intent = Intent(this, ResultActivity::class.java)
+                                intent.putExtra("category", currentCategory)
+                                startActivity(intent)
+                            } else {
+                                val intent = Intent(this, LyricQuestionActivity::class.java)
+                                intent.putExtra("category", currentCategory)
+                                intent.putExtra("questionNumber", questionNumber + 1)
+                                startActivity(intent)
+                                finish()
+                            }
+
                         } else {
                             val intent = Intent(this, LyricQuestionActivity::class.java)
                             intent.putExtra("category", currentCategory)
@@ -163,13 +190,6 @@ class LyricQuestionActivity : AppCompatActivity() {
                             startActivity(intent)
                             finish()
                         }
-
-                    } else {
-                        val intent = Intent(this, LyricQuestionActivity::class.java)
-                        intent.putExtra("category", currentCategory)
-                        intent.putExtra("questionNumber", questionNumber + 1)
-                        startActivity(intent)
-                        finish()
                     }
                 }
             }

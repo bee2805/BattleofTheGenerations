@@ -25,7 +25,7 @@ object BoomerConstants {
             2,
             R.drawable.dancing_queen,
             "See that girl, watch that scene, __________ the dancing queen!",
-            "Digging"
+            "digging"
         )
         boomerLyricQuestions.add(boomerMissingLyric1)
         boomerLyricQuestions.add(boomerMissingLyric2)

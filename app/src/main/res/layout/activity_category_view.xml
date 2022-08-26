@@ -62,7 +62,7 @@
         <!--  CARD ONE  -->
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cat_boomer"
-            android:layout_width="155dp"
+            android:layout_width="164dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
@@ -107,7 +107,7 @@
         <!--  CARD TWO  -->
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cat_gen_x"
-            android:layout_width="155dp"
+            android:layout_width="164dp"
             android:layout_height="wrap_content"
             app:cardBackgroundColor="@color/lightest_blue"
             app:strokeColor="@color/primary_light_blue"
@@ -151,7 +151,7 @@
         <!--  CARD THREE  -->
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cat_millennial"
-            android:layout_width="155dp"
+            android:layout_width="164dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             app:cardBackgroundColor="@color/primary_green"
@@ -195,7 +195,7 @@
         <!--  CARD FOUR  -->
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cat_gen_z"
-            android:layout_width="155dp"
+            android:layout_width="164dp"
             android:layout_height="wrap_content"
             app:cardBackgroundColor="@color/primary_pink"
             app:strokeColor="@color/dark_pink"

@@ -24,7 +24,7 @@ object GenXConstants {
             4,
             R.drawable.manic_monday,
             "It's just another __________ Monday.",
-            "Manic"
+            "manic"
         )
 
         genXLyricQuestions.add(genXMissingLyric1)

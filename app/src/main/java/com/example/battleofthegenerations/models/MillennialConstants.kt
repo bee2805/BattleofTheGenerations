@@ -23,7 +23,7 @@ object MillennialConstants {
             6,
             R.drawable.hey_soul_sister,
             "Hey soul sister, ain't that Mr. ______ on the radio, stereo, the way you move ain't fair you know.",
-            "Mister"
+            "mister"
         )
 
         millennialLyricQuestions.add(millennialMissingLyric1)

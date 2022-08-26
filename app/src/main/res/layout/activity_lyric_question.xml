@@ -14,7 +14,7 @@
         android:id="@+id/iv_lyric_image"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/manic_monday"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:text="The missing _________ question will be over here!"
+        android:text="It's just another __________ Monday."
         android:textColor="@color/white"
         android:textSize="21sp"
         android:textStyle="bold"
@@ -65,7 +65,8 @@
             android:id="@+id/et_answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Finish the lyric..." />
+            android:hint="Finish the lyric..."
+            android:inputType="textPersonName"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
@@ -73,7 +74,7 @@
         android:padding="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/dark_green"
+        android:backgroundTint="@color/primary_light_blue"
         android:textColor="@color/white"
         app:cardCornerRadius="10dp"
         android:text="next"
