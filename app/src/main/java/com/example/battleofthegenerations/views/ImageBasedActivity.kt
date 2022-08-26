@@ -369,5 +369,6 @@ class ImageBasedActivity : AppCompatActivity() {
         binding.tvOptionTwo.text = currentQuestion.optionTwo
         binding.tvOptionThree.text = currentQuestion.optionThree
         binding.progressBar.progress = currentQuestion.id
+        binding.tvProgress.text = currentQuestion.id.toString() + "/7"
     }
 }

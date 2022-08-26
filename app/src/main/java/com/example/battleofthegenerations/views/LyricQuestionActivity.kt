@@ -202,6 +202,7 @@ class LyricQuestionActivity : AppCompatActivity() {
         binding.tvLyricQuestion.text = currentQuestion.questionText
         binding.ivLyricImage.setImageResource(currentQuestion.questionImage)
         binding.progressBar.progress = currentQuestion.id
+        binding.tvProgress.text = currentQuestion.id.toString() + "/7"
     }
 }
 
