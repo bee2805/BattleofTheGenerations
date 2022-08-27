@@ -10,18 +10,17 @@
     android:background="@color/primary_dark_blue"
     android:gravity="center">
 
-    <!-- https://www.flaticon.com/free-icon/request_7887104?term=question&page=1&position=38&page=1&position=38&related_id=7887104&origin=search -->
-<!--    <ImageView-->
-<!--        android:id="@+id/iv_last_user"-->
-<!--        android:layout_width="40dp"-->
-<!--        android:layout_height="40dp"-->
-<!--        app:borderWidth="0dp"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        android:src="@drawable/fab"/>-->
+     <!-- https://www.flaticon.com/free-icon/request_7887104?term=question&page=1&position=38&page=1&position=38&related_id=7887104&origin=search -->
+    <ImageView
+        android:id="@+id/iv_last_user"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:borderWidth="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/fab"/>
 
-    <!--  https://www.flaticon.com/free-icon/gear_484562?term=settings&page=1&position=34&page=1&position=34&related_id=484562&origin=search  -->
-
+    <!-- https://www.flaticon.com/free-icon/gear_484562?term=settings&page=1&position=34&page=1&position=34&related_id=484562&origin=search -->
     <ImageView
         android:id="@+id/iv_settings"
         android:layout_width="40dp"

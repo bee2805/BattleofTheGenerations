@@ -203,9 +203,17 @@ The `Development Process` is the technical implementations and functionality don
 
 ### Mockups
 
-![image9][image9]
+![image9](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/mockup_one.jpg)
 <br>
-![image10][image10]
+
+![image10](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/mockup_two.jpg)
+<br>
+
+![image10](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/mockup_three.jpg)
+
+<br>
+
+![image10](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/mockup_four.jpg)
 
 <!-- VIDEO DEMONSTRATION -->
 ### Video Demonstration
@@ -244,3 +252,4 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 * [Gen X Questions](https://www.buzzfeed.com/briangalindo/only-gen-xers-are-passing-this-quiz)
 * [Millennial Questions](https://www.buzzfeed.com/briangalindo/easy-2000s-trivia-quiz-for-millennials)
 * [Gen Z Questions](https://www.buzzfeed.com/farrahpenn/these-trivia-questions-will-separate-gen-z-cuspers-from)
+* [Mockups](https://www.behance.net/gallery/112977919/Google-Pixel-5-Mockup-Free-Download)
