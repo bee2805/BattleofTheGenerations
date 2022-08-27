@@ -85,7 +85,7 @@ The following instructions will get you a copy of the project up and running on 
 ### How to install
 
 ### Prerequisites
-Emsure that you have GitHub desktop downloaded onto your machine.
+Emsure that you have GitHub desktop and Androuid Studio downloaded onto your machine.
 
 ### Installation
 Here are a couple of ways to clone this repo:
@@ -99,14 +99,6 @@ Run the following in the command-line to clone the project:
    git clone https://github.com/bee2805/BattleofTheGenerations.git
    ```
     Open `Software` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
-
-3. Install Dependencies </br>
-Run the following in the command-line to install all the required dependencies:
-   ```sh
-   npm install
-   ```
-
-4. An API key is not required
 
 
 <!-- FEATURES AND FUNCTIONALITY-->
