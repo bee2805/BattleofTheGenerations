@@ -174,8 +174,8 @@ After setting this up, I went ahead and did some research on different trivia ga
 #### Above And Beyond
 
 * I implemented different ways in which a question can be answered - Either a text input with appropriate validation or selecting between three answers.
-* 7 questions per category instead of 5
-* 4 categories instead of 3
+* 8 questions per category instead of 5
+* 5 categories instead of 3
 
 ### Future Implementation
 <!-- stipulate functionality and improvements that can be implemented in the future. -->
