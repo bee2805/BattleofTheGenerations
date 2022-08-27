@@ -109,22 +109,22 @@ Run the following in the command-line to clone the project:
 
 I implemented a splash screen that displays as soon as the application is opened by the user. It is active for 3 and thereafter the user will be directed to the home page where they will need to add their username.
 
-![image2][image2]
+![image2](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/splash_screen.jpg)
 ### Categories
 
 The user can choose between different categories that they would like to play.
 
-![image3][image3]
+![image3](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/categories.jpg)
 ### Questions
 
 There are three different views for each question type. Two of the question types have three options in which you can pick and the lyric-based question view allows users to answer by typing in the answer. As the user plays each category, points will accumulate for each correct answer.
 
-![image4][image4]
+![image4](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/question_screen.jpg)
 ### Results/Scores
 
 The result screen displays after a user have completed a category. The score from the specific Category played is displayed here.
 
-![image5][image5]
+![image5](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/results.jpg)
 
 
 <!-- CONCEPT PROCESS -->
@@ -140,12 +140,12 @@ After setting this up, I went ahead and did some research on different trivia ga
 
 ### Ideation
 
-![image5](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/concept_ideation.jpg)
+![image6](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/concept_ideation.jpg)
 <br>
 
 ### Wireframes
 
-![image6](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/wireframes.jpg)
+![image7](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/wireframes.jpg)
 
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
@@ -189,16 +189,16 @@ After setting this up, I went ahead and did some research on different trivia ga
 
 ### Mockups
 
-![image9](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/mockup_one.jpg)
+![image8](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/mockup_one.jpg)
 <br>
 
-![image10](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/mockup_four.jpg)
+![image9](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/mockup_four.jpg)
 <br>
 
 ![image10](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/mockup_three.jpg)
 <br>
 
-![image10](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/mockup_two.jpg)
+![image11](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/mockup_two.jpg)
 
 <!-- VIDEO DEMONSTRATION -->
 ### Video Demonstration
