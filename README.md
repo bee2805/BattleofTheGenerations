@@ -23,7 +23,7 @@
   <h3 align="center">OK Boomer</h3>
 
   <p align="center">
-    In light of the quiz craze that arised during the Covid19 Pandemic, I decided to create a trivia app that would bring together individials from different backgrounds.  The OK Boomer mobile game was designed and build using Kotlin and in Android Studio. This App was inspired by the OK Boomer Card Game.<br>
+    In light of the quiz craze that arose during the Covid19 Pandemic, I decided to create a trivia app that would bring together individuals from different backgrounds.  The OK Boomer mobile game was designed and built using Kotlin and Android Studio. This App was inspired by the OK Boomer Card Game.<br>
     
    <br />
    <br />
@@ -74,7 +74,7 @@ Welcome to the OK Boomer mobile trivia application! It is no secret that each ge
 
 * [Android Studio](https://developer.android.com/studio?gclid=CjwKCAjw3qGYBhBSEiwAcnTRLudtJ2FIlpZp7wRlpahXN_ZNMtz229FDIOG7RtDaLKjgrbFTDy7y5hoCzcYQAvD_BwE&gclsrc=aw.ds)
 * [Kotlin](https://kotlinlang.org/)
-* [XML]
+* XML
 
 <!-- GETTING STARTED -->
 <!-- Make sure to add appropriate information about what prerequesite technologies the user would need and also the steps to install your project on their own mashines -->
@@ -113,27 +113,24 @@ Run the following in the command-line to install all the required dependencies:
 <!-- You can add the links to all of your imagery at the bottom of the file as references -->
 ## Features and Functionality
 
-<!-- note how you can use your gitHub link. Just make a path to your assets folder -->
-![image2](https://raw.githubusercontent.com/bee2805/BattleofTheGenerations/main/src/assets/mockup.jpg)
-
 ### Splash Screen
 
-I implemented a splash screen that displays as soon as the application is opened by the user. It is actice for 3 and thereafter the user will be directed to the home page where they will need to add their username
+I implemented a splash screen that displays as soon as the application is opened by the user. It is active for 3 and thereafter the user will be directed to the home page where they will need to add their username.
 
-![image3][image3]
+![image2][image2]
 ### Categories
 
-The user can choose different categories that they would like to play.
+The user can choose between different categories that they would like to play.
 
-![image4][image4]
+![image3][image3]
 ### Questions
 
-There are three different views for each question type. Two of the question types have three options in which you can pick between and the lyric based question view allows users to answer by typing in the answer. As the user plays each category, points will accumulate for each correct answer.
+There are three different views for each question type. Two of the question types have three options in which you can pick and the lyric-based question view allows users to answer by typing in the answer. As the user plays each category, points will accumulate for each correct answer.
 
 ![image4][image4]
 ### Results/Scores
 
-The result screen displays after a user has completed a category. The score from the specific Category playes is displayed here.
+The result screen displays after a user have completed a category. The score from the specific Category played is displayed here.
 
 ![image5][image5]
 
@@ -143,7 +140,11 @@ The result screen displays after a user has completed a category. The score from
 <!-- here you will add things like wireframing, data structure planning, anything that shows your process. You need to include images-->
 ## Concept Process
 
-After setting this up, I went ahead and did some research on different trivia games or apps to get a bit of inspiration for the brand and layout of the app. It was then that I ran into this amazing card game called OK boomer on Behance. After completely falling in love with this whole idea as well as the branding, I mean, how could you not?!!! I got really inspired and decided to base my app on this card game.
+* I thought about the goals that I wanted to achieve with this app. The main goal was definitely to create an app that brings people together, so I jotted down a few ideas that could achieve this goal. The first ideas I got were either not exciting enough, or they were interest-specific. 
+* After bashing ideas around my brain, I finally conclude that a generation quiz would not only be super fun and inclusive, but would also bring on that nostalgia feeling, and I think we can all admit that it’s a great feeling to have!
+* I then decided on the categories that I wanted to include and after some amazing advice, I added an extra category that tells you which generation your soul belongs to!
+
+After setting this up, I went ahead and did some research on different trivia games or apps to get a bit of inspiration for the brand and layout of the app. It was then that I ran into this amazing card game called OK boomer on Behance. After completely falling in love with this whole idea as well as the branding, I mean, how could you not?!!! I got inspired and decided to base my app on this card game.
 
 ### Ideation
 
@@ -154,30 +155,23 @@ After setting this up, I went ahead and did some research on different trivia ga
 
 ![image6](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/wireframes.jpg)
 
-### Custom UI
-
-![image8][image8]
-
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
-
-The `Development Process` is the technical implementations and functionality done in the frontend and backend of the application.
 
 ### Implementation Process
 <!-- stipulate all of the functionality you included in the project -->
 <!-- This is your time to shine, explain the technical nuances of your project, how did you achieve the final outcome!-->
 
-* Validation on inputs
-* Implemented Routing with `React-Router v6`.
-* API End Point: link Here 
-* `Plugin` for this.
-* ETC.
+* Validation of inputs
+* XML for the layout and styling
+* Kotlin for the functionality
+* Different questions are dynamically displayed
 
 #### Highlights
 <!-- stipulated the highlight you experienced with the project -->
 * It was super exciting to learn Kotlin and build my very first android app!
-* Ater getting my muse, which was OK Boomer, the excitement grew each and every day. I had a lot of fun doing the research, especially for the lyric based questions. 
-* I had a lot of fun doing the research, especially for the lyric based questions. 
+* Ater getting my muse, which was OK Boomer, the excitement grew each day. I had a lot of fun doing the research, especially for the lyric-based questions. 
+* I had a lot of fun doing the research, especially for the lyric-based questions. 
 
 #### Challenges
 <!-- stipulated the challenges you faced with the project and why you think you faced it or how you think you'll solve it (if not solved) -->
@@ -195,7 +189,7 @@ The `Development Process` is the technical implementations and functionality don
 <!-- stipulate functionality and improvements that can be implemented in the future. -->
 
 * I'd like to implement the high scores from each category.
-* One last category where questions from different categories will be displayed. The end result will tell the user which generation their soul belongs to
+* Visual communication when the incorrect or correct answer is chosen
 * A light and dark mode toggle in the settings menu
 
 <!-- MOCKUPS -->
@@ -252,3 +246,4 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 * [Millennial Questions](https://www.buzzfeed.com/briangalindo/easy-2000s-trivia-quiz-for-millennials)
 * [Gen Z Questions](https://www.buzzfeed.com/farrahpenn/these-trivia-questions-will-separate-gen-z-cuspers-from)
 * [Mockups](https://www.behance.net/gallery/112977919/Google-Pixel-5-Mockup-Free-Download)
+* All the links to specific imagery is displayed in the code
