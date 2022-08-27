@@ -59,8 +59,17 @@ object GenXConstants {
             "manic"
         )
 
+        // https://brainzoneinternational.com/a-ha-reached-a-billion-of-views-of-take-on-me-before-their-first-arrival-in-prague/
+        val genXMissingLyric3 = MissingLyricQuestion(
+            5,
+            R.drawable.aha_lyric,
+            "Take on me, take me on. I'll be gone in a day or ______",
+            "manic"
+        )
+
         genXLyricQuestions.add(genXMissingLyric1)
         genXLyricQuestions.add(genXMissingLyric2)
+        genXLyricQuestions.add(genXMissingLyric3)
         return genXLyricQuestions
 
     } // end of gen X lyric questions
@@ -72,7 +81,7 @@ object GenXConstants {
         // Gen X
         // https://www.buzzfeed.com/briangalindo/only-gen-xers-are-passing-this-quiz
         val genXMultipleChoice1 = MultipleChoice(
-            5,
+            6,
             R.drawable.lollapalooza,
             "What music festival started in the early 90's?",
             "Woodstock",
@@ -83,7 +92,7 @@ object GenXConstants {
 
         // https://www.buzzfeed.com/briangalindo/only-gen-xers-are-passing-this-quiz
         val genXMultipleChoice2 = MultipleChoice(
-            6,
+            7,
             R.drawable.cabbage_patch_kids,
             "In 1983, parents were literally fighting over what toy during the holiday season?",
             "Cabbage Patch Kids",
@@ -94,7 +103,7 @@ object GenXConstants {
 
         // https://www.goodhousekeeping.com/beauty/g3633/courteney-cox-then-and-now/
         val genXMultipleChoice3 = MultipleChoice(
-            7,
+            8,
             R.drawable.courteney_cox,
             "Prior to appearing on Friends, Courtney Cox was probably best known for her recurring role on what sitcom?",
             "Cheers",

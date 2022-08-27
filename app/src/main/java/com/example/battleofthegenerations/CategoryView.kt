@@ -28,19 +28,12 @@ class CategoryView : AppCompatActivity() {
         val genXScore = sharedPref.getInt(AppConstants.genX_score, 0)
         val genZScore = sharedPref.getInt(AppConstants.genZ_score, 0)
 
-        binding.tvBoomerLastScore.text = "$username's Last Score: $boomerScore"
-        binding.tvGenXLastScore.text = "Last Score: $genXScore"
-        binding.tvMillennialLastScore.text = "Last Score: $millennialScore"
-        binding.tvGenZLastScore.text = "Last Score: $genZScore"
-
         binding.tvUsername.text = "Hello, $username!"
 
         binding.ivSettings.setOnClickListener{
             val intent = Intent(this, SettingsActivity::class.java)
             startActivity(intent)
         }
-
-        binding.tvBoomerLastScore.text
 
         // Navigating to boomer Questions
         binding.catBoomer.setOnClickListener {
@@ -69,6 +62,13 @@ class CategoryView : AppCompatActivity() {
             val intent = Intent(this, ImageBasedActivity::class.java)
             intent.putExtra("username", username)
             intent.putExtra("category", "gen_z")
+            startActivity(intent)
+        }
+
+        binding.allCategories.setOnClickListener {
+            val intent = Intent(this, MultipleChoiceActivity::class.java)
+            intent.putExtra("username", username)
+            intent.putExtra("category", "all_categories")
             startActivity(intent)
         }
     }

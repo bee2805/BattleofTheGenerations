@@ -30,8 +30,20 @@ object GenZConstants {
             "Dabbing"
         )
 
+        // https://www.imdb.com/title/tt1661326/
+        val genZImageBasedQuestion3 = ImageBasedQuestion(
+            3,
+            R.drawable.shake_it_up,
+            "What was this show starring Bella Thorne and Zendaya?",
+            "Shake it All",
+            "Shake it Off",
+            "Shake it Up",
+            "Shake it Up"
+        )
+
         genZImageBasedQuestions.add(genZImageBasedQuestion1)
         genZImageBasedQuestions.add(genZImageBasedQuestion2)
+        genZImageBasedQuestions.add(genZImageBasedQuestion3)
         return genZImageBasedQuestions
     }
 
@@ -41,7 +53,7 @@ object GenZConstants {
 
         // https://www.buzzfeed.com/farrahpenn/these-trivia-questions-will-separate-gen-z-cuspers-from
         val genZMultipleChoice1 = MultipleChoice(
-            3,
+            4,
             R.drawable.lily_oliver,
             "What were the names of Miley's two best friends on Hannah Montanna?",
             "Oscar and Lola",
@@ -52,7 +64,7 @@ object GenZConstants {
 
         // https://www.tetongravity.com/forums/showthread.php/337421-Crazy-eyes-post-em-up
         val genZMultipleChoice2 = MultipleChoice(
-            4,
+            5,
             R.drawable.karen,
             "What does it mean to be a Karen?",
             "A person who can't spell",
@@ -63,7 +75,7 @@ object GenZConstants {
 
         // https://www.wikihow.com/What-Does-Smh-Mean
         val genZMultipleChoice3 = MultipleChoice(
-            5,
+            6,
             R.drawable.smh,
             "What does 'smh' stand for?",
             "Shaking my head",
@@ -84,7 +96,7 @@ object GenZConstants {
 
         // https://www.billboard.com/music/music-news/lil-nas-x-billy-ray-cyrus-old-town-road-music-video-1-billion-views-1235124943/
         val genZMissingLyric1 = MissingLyricQuestion(
-            6,
+            7,
             R.drawable.old_town_road,
             "I'm gonna take my _____ to the old town road.",
             "horse"
@@ -92,7 +104,7 @@ object GenZConstants {
 
         // https://www.youtube.com/watch?v=hT_nvWreIhg
         val genZMissingLyric2 = MissingLyricQuestion(
-            7,
+            8,
             R.drawable.counting_stars,
             "Old, but I'm not that old, young, but I'm not that _______.",
             "bold"

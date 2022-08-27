@@ -8,6 +8,7 @@ import com.example.battleofthegenerations.CategoryView
 import com.example.battleofthegenerations.ResultActivity
 import com.example.battleofthegenerations.databinding.ActivityMultipleChoiceBinding
 import com.example.battleofthegenerations.models.*
+import com.example.battleofthegenerations.models.AllCategoryConstants.getAllCategoryQuestions
 import com.example.battleofthegenerations.models.BoomerConstants.getBoomerMultipleChoiceQuestions
 import com.example.battleofthegenerations.models.GenXConstants.getGenXMultipleChoice
 import com.example.battleofthegenerations.models.GenZConstants.getGenZMultipleChoiceQuestions
@@ -367,7 +368,6 @@ class MultipleChoiceActivity : AppCompatActivity() {
             }
 
             "gen_z"->{
-                Log.i("success", currentCategory)
                 val genZQuestions = getGenZMultipleChoiceQuestions()
                 val currentQuestion = genZQuestions[questionNumber]
                 updateUI(currentQuestion)
@@ -477,6 +477,116 @@ class MultipleChoiceActivity : AppCompatActivity() {
                     }
                 }
             }
+            "all_categories"->{
+                val allCategories = getAllCategoryQuestions()
+                val currentQuestion = allCategories[questionNumber]
+                updateUI(currentQuestion)
+
+                binding.tvOptionOne.setOnClickListener {
+                    if (binding.tvOptionOne.text == currentQuestion.answer){
+                        score += 1
+
+                        intent.putExtra("username", username)
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        intent.putExtra("score", score)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("username", username)
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        intent.putExtra("score", score)
+                        startActivity(intent)
+                        finish()
+                    }
+
+                    if(questionNumber + 1 == allCategories.count()){
+                        val intent = Intent(this, ResultActivity::class.java)
+                        intent.putExtra("username", username)
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("score", score)
+                        startActivity(intent)
+                    } else {
+                        intent.putExtra("username", username)
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        intent.putExtra("score", score)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+
+                binding.tvOptionTwo.setOnClickListener {
+                    if (binding.tvOptionTwo.text == currentQuestion.answer){
+                        score += 1
+
+                        intent.putExtra("username", username)
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        intent.putExtra("score", score)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("username", username)
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        intent.putExtra("score", score)
+                        startActivity(intent)
+                        finish()
+                    }
+
+                    if(questionNumber + 1 == allCategories.count()){
+                        val intent = Intent(this, ResultActivity::class.java)
+                        intent.putExtra("username", username)
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("score", score)
+                        startActivity(intent)
+                    } else {
+                        intent.putExtra("username", username)
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        intent.putExtra("score", score)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+
+                binding.tvOptionThree.setOnClickListener {
+                    if (binding.tvOptionThree.text == currentQuestion.answer){
+                        score += 1
+
+                        intent.putExtra("username", username)
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        intent.putExtra("score", score)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        intent.putExtra("username", username)
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        intent.putExtra("score", score)
+                        startActivity(intent)
+                        finish()
+                    }
+
+                    if(questionNumber + 1 == allCategories.count()){
+                        val intent = Intent(this, ResultActivity::class.java)
+                        intent.putExtra("username", username)
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("score", score)
+                        startActivity(intent)
+                    } else {
+                        intent.putExtra("username", username)
+                        intent.putExtra("category", currentCategory)
+                        intent.putExtra("multipleChoiceQuestions", questionNumber + 1)
+                        intent.putExtra("score", score)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+            }
         }
     }
 
@@ -487,6 +597,6 @@ class MultipleChoiceActivity : AppCompatActivity() {
         binding.tvOptionTwo.text = currentQuestion.optionTwo
         binding.tvOptionThree.text = currentQuestion.optionThree
         binding.progressBar.progress = currentQuestion.id
-        binding.tvProgress.text = currentQuestion.id.toString() + "/7"
+        binding.tvProgress.text = currentQuestion.id.toString() + "/8"
     }
 }

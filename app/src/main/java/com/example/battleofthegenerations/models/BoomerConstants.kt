@@ -100,8 +100,20 @@ object BoomerConstants {
             "Bell Bottoms"
         )
 
+        // https://za.pinterest.com/pin/491033165602965679/
+        val boomerImageBasedQuestion3 = ImageBasedQuestion(
+            8,
+            R.drawable.gogo_boots,
+            "What are these boots called?",
+            "Chelsea Boots",
+            "Thigh Highs",
+            "Go-go Boots",
+            "Go-go Boots"
+        )
+
         boomerImageBasedQuestions.add(boomerImageBasedQuestion1)
         boomerImageBasedQuestions.add(boomerImageBasedQuestion2)
+        boomerImageBasedQuestions.add(boomerImageBasedQuestion3)
         return boomerImageBasedQuestions
     }
 }

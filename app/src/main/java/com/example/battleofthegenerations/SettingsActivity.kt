@@ -20,5 +20,16 @@ class SettingsActivity : AppCompatActivity() {
             val intent = Intent(this, CategoryView::class.java)
             startActivity(intent)
         }
+
+        binding.github.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/bee2805/BattleofTheGenerations"))
+            startActivity(intent)
+        }
+
+        binding.okBoomer.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://okboomer.game/"))
+            startActivity(intent)
+        }
+
     }
 }

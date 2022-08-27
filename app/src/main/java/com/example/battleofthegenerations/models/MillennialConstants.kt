@@ -19,7 +19,7 @@ object MillennialConstants {
             "Singled Out",
             "Next",
             "Dismissed",
-            "next"
+            "Next"
         )
 
         // https://www.wired.com/story/tamagotchi-25-year-anniversary-impact/
@@ -44,9 +44,20 @@ object MillennialConstants {
             "Metallica"
         )
 
+        val millennialMultipleChoice4 = MultipleChoice(
+            4,
+            R.drawable.zune,
+            "What was the name of the MP3 player that Microsoft released to rival the iPod?",
+            "Zune",
+            "Multiplayer",
+            "The M",
+            "Zune"
+        )
+
         millennialMultipleChoiceQuestions.add(millennialMultipleChoice1)
         millennialMultipleChoiceQuestions.add(millennialMultipleChoice2)
         millennialMultipleChoiceQuestions.add(millennialMultipleChoice3)
+        millennialMultipleChoiceQuestions.add(millennialMultipleChoice4)
         return millennialMultipleChoiceQuestions
     }
 
@@ -56,7 +67,7 @@ object MillennialConstants {
 
         // https://www.buzzfeed.com/briangalindo/easy-2000s-trivia-quiz-for-millennials
         val millennialImageBasedQuestion1 = ImageBasedQuestion(
-            4,
+            5,
             R.drawable.sidekick,
             "What Phone is this?",
             "Sidekick",
@@ -67,7 +78,7 @@ object MillennialConstants {
 
         // https://www.youtube.com/watch?v=3G1pwUe4MvA - screenshot from ad
         val millennialImageBasedQuestion2 = ImageBasedQuestion(
-            5,
+            6,
             R.drawable.poo_chi,
             "What is this toy called?",
             "Poo-Chi",
@@ -87,7 +98,7 @@ object MillennialConstants {
 
         // https://www.youtube.com/watch?v=gGdGFtwCNBE - music vid screenshot
         val millennialMissingLyric1 = MissingLyricQuestion(
-            6,
+            7,
             R.drawable.mr_brightside,
             "Jealousy, turning ______ into the sea.",
             "saints"
@@ -95,7 +106,7 @@ object MillennialConstants {
 
         // https://www.antimusic.com/news/2021/April/13Train_Receive_Diamond_Award_For_Hey,_Soul_Sister.shtml
         val millennialMissingLyric2 = MissingLyricQuestion(
-            7,
+            8,
             R.drawable.hey_soul_sister,
             "Hey soul sister, ain't that Mr. ______ on the radio, stereo, the way you move ain't fair you know.",
             "mister"
