@@ -206,14 +206,13 @@ The `Development Process` is the technical implementations and functionality don
 ![image9](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/mockup_one.jpg)
 <br>
 
+![image10](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/mockup_four.jpg)
+<br>
+
 ![image10](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/mockup_two.jpg)
 <br>
 
 ![image10](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/mockup_three.jpg)
-
-<br>
-
-![image10](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/mockup_four.jpg)
 
 <!-- VIDEO DEMONSTRATION -->
 ### Video Demonstration
