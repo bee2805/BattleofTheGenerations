@@ -29,7 +29,7 @@
 
     <!--  Settings  -->
     <string name="settings_heading">Settings</string>
-    <string name="settings_info">Want to start the game over? Reset your high score here! Be sure to also learn more about the creation of this app awesome application!</string>
+    <string name="settings_info">Be sure to learn more about the creation of this app awesome application!</string>
     <string name="reset_score">Reset High Score!</string>
 
     <string name="about_the_app">Hello, my name is Bronwyn Potgieter and I am the creator of this app. The creation of this application was inspired by the OK Boomer card game. I love how the game brings people from all different generations together, and brings on that great nostalgia feeling! Please be sure to go and check out the OK Boomer website, and if you can, definitely buy the card game. You will not regret it!</string>
