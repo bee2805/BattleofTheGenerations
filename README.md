@@ -27,7 +27,7 @@
     
    <br />
    <br />
-   <a href="path/to/demonstration/video">View Demo</a>
+   <a href="https://drive.google.com/file/d/13yYQyI_oNGEweU1Nftim3kCc0yPdMXoP/view?usp=sharing">View Demo</a>
     ·
     <a href="https://github.com/bee2805/BattleofTheGenerations/issues">Report Bug</a>
     ·
@@ -85,7 +85,7 @@ The following instructions will get you a copy of the project up and running on 
 ### How to install
 
 ### Prerequisites
-Emsure that you have GitHub desktop and Androuid Studio downloaded onto your machine.
+Ensure that you have GitHub desktop and Android Studio downloaded onto your machine.
 
 ### Installation
 Here are a couple of ways to clone this repo:
@@ -205,7 +205,7 @@ After setting this up, I went ahead and did some research on different trivia ga
 
 To see a run through of the application, click below:
 
-[View Demonstration](path/to/video/demonstration)
+[View Demonstration](https://drive.google.com/file/d/13yYQyI_oNGEweU1Nftim3kCc0yPdMXoP/view?usp=sharing)
 
 
 See the [open issues](https://github.com/bee2805/BattleofTheGenerations/issues) for a list of proposed features (and known issues).
